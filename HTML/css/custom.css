@@ -1,0 +1,209 @@
+/* ----------------------------------------------------------------
+	Custom CSS
+
+	Add all your Custom Styled CSS here for New Styles or
+	Overwriting Default Theme Styles for Better Hanlding Updates
+-----------------------------------------------------------------*/
+
+.dark #top-bar, #top-bar.dark {
+	background-color: #030a54;
+}
+
+.dark .top-links li:hover {
+	background-color: #4e538e;
+}
+
+.dark .top-links li > a {
+    color: #dadada;
+}
+
+.dark #top-social li a {
+    color: #dadada;
+}
+
+#footer.dark, .dark #footer {
+    background-color: #010638;
+    color: #CCC;
+    border-top-color: rgba(0,0,0,0.2);
+}
+
+#footer .footer-widgets-wrap {
+    padding: 40px 0;
+}
+
+.footer-page-links li {
+	list-style: none;
+	margin: 0;
+	padding: 4px;
+}
+
+.footer-logo {
+	margin-bottom: 20px;
+	max-width: 35%;
+}
+
+.footer-details {
+	color: #b12c46 !important;
+	font-size: 15px;
+	font-weight: 600;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+
+.page-links {
+	display: inline-block;
+	margin-top: 30px;
+	font-size: 14px;
+	border-bottom: 0 !important;
+}
+
+.page-links span{
+	margin: 0 10px;
+}
+
+#footer.dark .social-icon.si-borderless {
+    color: #9f2243 !important;
+}
+
+
+/* Slider Caption
+-----------------------------------------------------------------*/
+
+.slider-caption,
+.nivo-caption,
+.flex-caption {
+	position: absolute;
+	top: 0;
+	left: 15px;
+	z-index: 20;
+	max-width: 550px;
+	color: #EEE;
+	font-size: 22px;
+	font-weight: 300;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.15);
+	-webkit-transition: top .3s ease;
+	-o-transition: top .3s ease;
+	transition: top .3s ease;
+}
+
+.slider-caption:not(.dark),
+.slider-caption:not(.dark) h2 {
+	color: #030a54;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.15)
+}
+
+.slider-caption h2 {
+	font-size: 60px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	font-weight: 700;
+	line-height: 1;
+	margin-bottom: 30px;
+}
+
+.slider-caption p {
+	margin-bottom: 10px;
+	font-size: 24px;
+	font-weight: 50;
+	color: #333333;
+}
+
+.slider-caption.slider-caption-right {
+	left: auto;
+	right: 15px;
+}
+
+.slider-caption.slider-caption-center {
+	position: relative;
+	max-width: 800px;
+	text-align: center;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+}
+
+.slider-caption-bg {
+	padding: 5px 12px;
+	border-radius: 2px;
+	background-color: rgba(0,0,0,0.6);
+	top: auto;
+	bottom: 50px;
+	left: 50px;
+}
+
+.slider-caption-bg.slider-caption-bg-light {
+	background-color: rgba(255,255,255,0.8);
+	color: #333;
+	font-weight: 400;
+	/*text-shadow: none;*/
+}
+
+.slider-caption-top-left {
+	top: 50px;
+	bottom: auto;
+}
+
+.slider-caption-top-right {
+	top: 50px;
+	bottom: auto;
+	left: auto;
+	right: 50px;
+}
+
+.slider-caption-bottom-right {
+	left: auto;
+	right: 50px;
+}
+
+/* --------------------------------------------- */
+.bgcolor {
+	background-color: #2a317d !important;
+}
+
+.button.button-border {
+	color: #9b001f;
+}
+
+.button:hover {
+	background-color: #9b001f !important;
+	color: #FFF !important;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+}
+
+.button.button-dark:hover { background-color: #9b001f; }
+
+.single-post .entry-content .entry-image {
+    max-width: 250px;
+}
+
+@media (max-width: 479px) {
+
+	#header-container { width: 350px !important; }
+}
+
+@media (max-width: 767px) and (min-width: 650px) {
+	#about-container {
+		width: 630px !important;
+	}
+}
+
+@media (max-width: 768px) {
+	#top-bar { display: none; }
+	#faqs.leftmargin, #faqs.rightmargin {
+		margin-right: 0px !important;
+		margin-left: 0px !important;
+	}
+}
+
+@media (max-width: 991px) {
+	#about-us-col-one-third, #about-us-col-two-third{
+		width: 100% !important;
+	}
+
+	#about-us-col-one-third img {
+		width: 275px;
+	}
+}
+
+
+
