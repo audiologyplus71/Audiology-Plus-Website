@@ -23,6 +23,8 @@
 	<link rel="stylesheet" href="css/responsive.css" type="text/css" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 
+	<!-- <link rel="stylesheet" href="demos/ecommerce/ecommerce.css" type="text/css" /> -->
+
 	<link rel="stylesheet" href="css/colors.css" type="text/css" />
 	<link rel="stylesheet" href="css/custom.css" type="text/css" />
 
@@ -54,7 +56,7 @@
 					============================================= -->
 					<div class="top-links">
 						<ul>
-							<li><a href="#"><i class="icon-time"></i> Timings</a></li>
+							<li><a href="#section-contact" data-scrollto="#section-contact"><i class="icon-time"></i> Clinic Hours</a></li>
 							<li><a href="#"><i class="icon-phone3"></i> 07380 626000</a></li>
 							<li><a href="#" class="nott"><i class="icon-envelope2"></i> contact@audiologyplus.co.uk</a></li>
 						</ul>
@@ -115,6 +117,8 @@
 
 							<li><a href="#" data-href="#section-facts"><div>Facts</div></a></li>
 
+							<li><a href="#" data-href="#section-locations"><div>Locations</div></a></li>
+
 							<li><a href="#" data-href="#section-contact"><div>Contact</div></a></li>
 						</ul>
 
@@ -128,26 +132,28 @@
 
 		<!-- Slider
 		============================================= -->
-		<section id="slider" class="swiper_wrapper full-screen clearfix" data-loop="true" data-autoplay="5000">
+		<section id="slider" class="swiper_wrapper full-screen clearfix" data-loop="true" data-autoplay="7000" data-speed="500" data-effect="fade">
 
 			<div class="swiper-container swiper-parent">
 				<div class="swiper-wrapper">
 					<div class="swiper-slide" style="background-image: url('demos/medical/images/slider/holding-hands-2.jpg');">
+						<!-- <div class="light-overlay"> -->
 						<div class="container clearfix">
-							<div class="slider-caption slider-caption-center" style="max-width: 700px;">
-								<h2 data-caption-animate="flipInX">Committed to <span>changing</span> lives<span>.</span></h2>
-								<p data-caption-animate="flipInX" data-caption-delay="500">At Audiology Plus, you can trust in our experience and expertise to provide you with the highest quality of clinical care.</p>
-							</div>
+							
+								<!-- <div class="slider-caption slider-caption-center" style="max-width: 700px;"> -->
+								<div class="slider-caption slider-caption-center">
+									<div class="some-overlay">
+									<!-- <h2 data-caption-animate="flipInX">Committed to <span>changing</span> lives<span>.</span></h2> -->
+									<h2>Committed to <span>changing</span> lives<span>.</span></h2>
+									<!-- <p data-caption-animate="flipInX" data-caption-delay="500">At Audiology Plus, you can trust in our experience and expertise to provide you with the highest quality of clinical care.</p> -->
+									<p>At Audiology Plus, you can trust in our experience and expertise to provide you with the highest quality of clinical care.</p>
+									</div>
+								</div>
+							
 						</div>
+						<!-- </div> -->
 					</div>
-					<div class="swiper-slide" style="background-image: url('demos/medical/images/slider/mountain-image-5.jpg');">
-						<div class="container clearfix">
-							<div class="slider-caption">
-								<h2 data-caption-animate="zoomIn">Live<span> life</span> without restrictions<span>.</span></h2>
-								<p data-caption-animate="zoomIn" data-caption-delay="500">We understand the importance of providing the best care possible for all patients tailored to their individual needs.</p>
-							</div>
-						</div>
-					</div>
+					
 				</div>
 
 			</div>
@@ -160,9 +166,9 @@
 
 			<div class="content-wrap nobottompadding">
 
-				<div class="container clearfix">
+				<div class="container clearfix bottommargin-lg">
 
-					<div id="section-services" class="page-section heading-block nobottomborder center bottommargin-lg">
+					<div id="section-services" class="page-section heading-block nobottomborder center">
 						<h2>Our Services</h2>
 						<span>Audiology Plus offers an array of services to determine the right solution for everyone.</span>
 					</div>
@@ -199,7 +205,7 @@
 
 					<!-- <div class="clear"></div> -->
 
-					<div class="col_half">
+					<div class="col_one_third">
 						<div class="feature-box fbox-plain">
 							<div class="fbox-icon" data-animate="bounceIn">
 								<a href="#"><i class="icon-medical-i-dental"></i></a>
@@ -209,7 +215,7 @@
 						</div>
 					</div>
 
-					<div class="col_half col_last">
+					<div class="col_one_third">
 						<div class="feature-box fbox-plain">
 							<div class="fbox-icon" data-animate="bounceIn" data-delay="200">
 								<a href="#"><i class="icon-medical-i-imaging-root-category"></i></a>
@@ -219,55 +225,19 @@
 						</div>
 					</div>
 
-					<!-- <div class="col_one_third col_last">
+					<div class="col_one_third col_last">
 						<div class="feature-box fbox-plain">
 							<div class="fbox-icon" data-animate="bounceIn" data-delay="400">
 								<a href="#"><i class="icon-medical-i-ambulance"></i></a>
 							</div>
-							<h3>24x7 Emergency</h3>
-							<p>Canvas includes tons of optimized code that are completely customizable and deliver unmatched fast performance.</p>
+							<h3>Home Visits</h3>
+							<p>Audiology Plus can provide domiciliary visits on request. We provide all equipment necessary for home visits.</p>
 						</div>
-					</div> -->
+					</div>
 
 				</div>
 
-				<div class="section nopadding common-height dark topmargin-sm nobottommargin">
-					<div class="col-md-5" data-height-lg="597" data-height-md="614" data-height-sm="400" data-height-xs="300" data-height-xxs="200" style="background: url('demos/medical/images/aud_equipment_6.jpg') center center no-repeat; background-size: cover;">
-						<div>&nbsp;</div>
-					</div>
-					<div id="booking-appointment-form" class="col-md-7 nopadding">
-						<div class="bgcolor col-padding">
-							<p>Audiology Plus offers a comprehensive diagnostic hearing assessment
-						for hearing loss, fitting of hearing aids and hearing aid aftercare for patients.</p>
-							
-
-						<h4>Hearing assessments includes:</h4>
-						<ul class="leftmargin-sm">
-							<li>A full medical history (to understand, if possible, the cause of
-							hearing deficit and to understand how the hearing deficit impacts
-							on your everyday life.)</li>
-
-							<li>Otoscopy examination (involves looking into the ear in order to
-							examine the external auditory canal.)</li>
-
-							<li>Tympanometry (to measure the size of the ear canal and to gage
-							the middle ear pressure and compliance of the ear drum.)</li>
-						</ul>
-
-						<p style="font-style:italic">
-							* Any abnormalities detected will be referred directly to the patients’
-							GP or an ENT consultant.
-							Audiology Plus provides a range of hearing aids suitable for the patient’s
-							needs, noise protection ear plugs and swim plugs. We provide tinnitus
-							counselling, and tinnitus maskers. We can help with listening and
-							communication strategies, arrange assistive listening devices or refer to
-							the Sensory Support Team for any further help. Audiology Plus can provide domiciliary visits on request.
-						</p>
-						</div>
-					</div>
-				</div>
-
-				<div class="section bottommargin-lg notopmargin" padding: 100px 0;">
+				<div class="dark section notopmargin nobottommargin" style="background-image: url('images/parallax/man-beach.jpg'); padding: 100px 0px; background-position: 50% -85.3828px;">
 					<div class="center allmargin-sm nobottomborder nobottommargin">	
 						<div class="heading-block">
 							<h2>Hearing impaired people are often subject to prejudice and misconception.</h2>
@@ -277,219 +247,313 @@
 					</div>
 				</div>
 
+				<div class="section notopmargin">
+					<div class="container clearfix">
+
+						<div id="section-about-us" class="page-section">
+
+							<div id="about-us-col-one-third" class="col_one_third topmargin-lg bottommargin-sm center">
+								<img data-animate="fadeInLeft" src="images/about/piotr-bw-small.jpg" alt="Piotr Swiatek">
+							</div>
+
+							<div id="about-us-col-two-third" class="col_two_third bottommargin col_last center">
+
+								<div class="heading-block topmargin-sm center">
+									<h3>Meet Piotr Swiatek</h3>
+									<span>Piotr Swiatek has a comprehensive knowledge in clinical physiology and audiology and hearing aids technology.</span>
+								</div>
+
+								<p>Piotr has completed his training in Clinical Physiology &amp; Audiology at The Middlesex University in London in 2009, follow by BSc in Hearing Science from Anglia Ruskin University in Cambridge. He also completed a BSc degree from the Open University, where he studied modules relevant to employment in health, social work or social care.</p>
+
+								<a href="about.html" class="button button-border button-dark button-rounded button-large noleftmargin topmargin-sm">Read more</a>
+
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="container clearfix topmargin">
+					<div class="col_one_fifth">
+					</div>
+
+					<div class="col_one_fifth">
+						<img src="images/audiology/cert/Ramsay-Logo-330x200.jpg">
+					</div>
+
+					<div class="col_one_fifth">
+						<img src="images/audiology/cert/HCPC-Logo-330x200.jpg">
+					</div>
+
+					<div class="col_one_fifth col_last">
+						<img src="images/audiology/cert/RCCP-Logo-330x200.jpg">
+					</div>
+
+					<div class="col_one_fifth">
+					</div>
+				</div>
+
+				<div class="section dark notopmargin" id="custom-pattern">
+					<div class="container clearfix bottommargin-lg">
+
+						<div id="side-navigation" class="tabs customjs">
+
+							<div id="section-facts" class="page-section heading-block center nobottomborder">
+								<h2>Did you know?</h2>
+								<span>Causes of Hearing Loss</span>
+								</div>
+
+							<div class="page-section col_one_third nobottommargin">
+
+								<ul class="sidenav">
+									<li class="ui-tabs-active"><a href="#snav-content1"><i class="icon-screen"></i>Responsive Layout<i class="icon-chevron-right"></i></a></li>
+									<li><a href="#snav-content2"><i class="icon-magic"></i>Retina Ready Display<i class="icon-chevron-right"></i></a></li>
+									<li><a href="#snav-content3"><i class="icon-tint"></i>Unlimited Color Options<i class="icon-chevron-right"></i></a></li>
+									<li><a href="#snav-content4"><i class="icon-gift"></i>Bootstrap 3.1 Compatible<i class="icon-chevron-right"></i></a></li>
+									<li><a href="#snav-content5"><i class="icon-adjust"></i>Light &amp; Dark Scheme<i class="icon-chevron-right"></i></a></li>
+								</ul>
+
+							</div>
+
+							<div class="col_two_third col_last nobottommargin">
+
+								<div id="snav-content1">
+									<h3>Ultra Responsive Template</h3>
+									<img class="alignright img-responsive" src="images/landing/responsive.png" alt="">
+
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, ex, inventore, tenetur, repellat ipsam soluta libero amet nam aspernatur perspiciatis quos praesentium et debitis ea odit enim illo aliquid eligendi numquam neque. Ipsum, voluptatibus, perspiciatis a quam aliquid cumque cupiditate id ipsa tempora eveniet. Cupiditate, necessitatibus, consequatur odio. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, vitae, laboriosam libero nihil labore hic modi? Odit, veritatis nulla molestiae!
+								</div>
+
+								<div id="snav-content2">
+									<h3>Retina Ready Display</h3>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, voluptatem reprehenderit natus facilis id deserunt iusto incidunt cumque odit molestias iste dolor eum esse soluta facere quidem minima in voluptate explicabo ducimus alias ratione aut molestiae omnis fuga labore quod optio modi voluptatum nemo suscipit porro maxime ex. Maiores, ratione eligendi labore quaerat veniam laborum nam rem delectus illum aspernatur quas sequi animi quae nulla alias hic inventore ex perspiciatis nisi consequatur enim a aut dolorum modi quod perferendis dicta impedit magni placeat repellat. Soluta, dicta, dolores, reiciendis, eum accusamus esse et debitis rem fugit fugiat dignissimos pariatur sint quod laborum autem. Nulla, ducimus, culpa, vel esse unde sapiente expedita corrupti consectetur veritatis quas autem laborum mollmquam amet eius. Numquam, ad, quaerat, ab, deleniti rem quae doloremque tenetur ea illum hic amet dolor suscipit porro ducimus excepturi perspiciatis modi praesentium voluptas quos expedita provident adipisci dolorem! Aliquam, ipsum voluptatem et voluptates impedit ab libero similique a. Nisi, ea magni et ab voluptatum nemo numquam odio quis libero aspernatur architecto tempore qui quisquam saepe corrupti necessitatibus natus quos aliquid non voluptatibus quod obcaecati fugiat quibusdam quidem inventore quia eveniet iusto culpa incidunt vero vel in accusamus eum. Molestiae nihil voluptate molestias illum eligendi esse nesciunt.
+								</div>
+
+								<div id="snav-content3">
+									<img class="alignleft img-responsive" src="https://www.w3schools.com/tags/colormap.gif" alt="">
+									<h3>Unlimited Color Options</h3>Dolor aperiam modi aliquam dolores consequatur error commodi ad eius incidunt! Libero, odio incidunt ullam sunt fugiat? Laboriosam, perferendis, debitis, harum soluta iste eos sunt odit architecto porro eveniet sint optio nihil animi. Laudantium, quam, culpa, velit molestias exercitationem reprehenderit enim distinctio aliquam aut ex numquam sequi assumenda veritatis fuga voluptatum. Magni, voluptates adipisci unde sapiente eligendi ea maxime tempora pariatur ipsa.. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, aspernatur, saepe, quidem animi hic rem libero earum fuga voluptas culpa iure qui accusantium ab quae dolorum laborum quia repellat fugit aut minima molestias placeat mollitia doloribus quibusdam consectetur officia nesciunt ad. Ab, quod ipsum commodi assumenda doloribus possimus sed laudantium.Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+								</div>
+
+								<div id="snav-content4">
+									<img class="alignleft img-responsive" src="images/landing/bootstrap.png" alt="">
+									<h3>Bootstrap v3.2.0 Compatiable</h3>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, nostrum, dolores id quo nam repudiandae ad culpa architecto minima nemo eaque soluta nulla laborum neque provident saepe facilis expedita numquam quas alias in perferendis accusamus ipsam blanditiis sit voluptatem temporibus vero error veritatis repellat eos reiciendis repellendus quam. Officia dicta ipsam nostrum aperiam. Dolor, expedita enim modi nostrum commodi sint architecto aliquam aut mollitia repellendus deserunt quaerat aspernatur aperiam voluptatibus consequatur rerum consequuntur.
+								</div>
+
+								<div id="snav-content5">
+									<h3>Light &amp; Dark Scheme Available</h3>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, temporibus, maxime, laudantium quidem sapiente deserunt error rerum illum explicabo voluptate velit tempora cupiditate reprehenderit consequuntur nemo in et blanditiis soluta tempore perspiciatis at atque excepturi culpa facere sequi impedit cumque illo molestias saepe eveniet ducimus fugiat reiciendis unde. Modi, at laboriosam ex velit commodi officiis! Neque, consequatur, modi, nulla, voluptatem quibusdam incidunt minus dolores repellat nihil consectetur ducimus aliquid. Eaque, tempora voluptatum accusantium expedita obcaecati magnam voluptates consequatur ut harum rem dolor id error. Officia, repudiandae, eos, quibusdam porro eius esse cupiditate non fugit dignissimos delectus et tempora sequi fugiat quo voluptatem temporibus vel obcaecati? Laboriosam, quis obcaecati quas veniam repellendus officiis et quos velit id natus mollitia dacilis ipsum et perspiciatis officia iste cupiditate ducimus nisi consequuntur excepturi dolorum. Sint, architecto, cumque facere officia harum dicta perferendis inventore excepturi sequi explicabo provident omnis dolore quasi fugit molestiae atque id consectetur reprehenderit laborum beatae consequatur similique.
+								</div>
+
+							</div>
+
+						</div>
+
+					</div>
+				</div>
 				
-				<div class="container clearfix">
+				<div class="container clearfix topmargin-lg bottommargin-sm">
 
-					<div id="section-about-us" class="page-section">
-
-						<div id="about-us-col-one-third" class="col_one_third bottommargin-sm center">
-							<img data-animate="fadeInLeft" src="images/about/piotr-bw-small.jpg" alt="Piotr Swiatek">
-						</div>
-
-						<div id="about-us-col-two-third" class="col_two_third bottommargin col_last center">
-
-							<div class="heading-block topmargin-sm center">
-								<h3>Meet Piotr Swiatek</h3>
-								<span>Piotr Swiatek has a comprehensive knowledge in clinical physiology and audiology and hearing aids technology.</span>
-							</div>
-
-							<p>Piotr has completed his training in Clinical Physiology &amp; Audiology at The Middlesex University in London in 2009, follow by BSc in Hearing Science from Anglia Ruskin University in Cambridge. He also completed a BSc degree from the Open University, where he studied modules relevant to employment in health, social work or social care.</p>
-
-							<a href="about.html" class="button button-border button-dark button-rounded button-large noleftmargin topmargin-sm">Read more</a>
-
-						</div>
+					<div id="section-locations" class="page-section heading-block center nobottomborder bottommargin-lg">
+						<h3>Locations</h3>
 					</div>
 
-				</div>
-
-				<div class="section">
-					<div class="container clearfix">
-						<div id="section-faq" class="page-section heading-block center nobottomborder bottommargin-lg">
-							<h3>Frequently Asked Questions</h3>
-							<span>Dynamically formulate error-free results before integrated results. Dramatically incubate integrated resources without cost effective "outside the.</span>
-						</div>
-						<div id="faqs" class="faqs leftmargin rightmargin">
-							<div class="col-md-6">
-
-								<h4><strong class="color">Q.</strong> How do I become an author?</h4>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dolorum, vero ipsum molestiae minima odio quo voluptate illum excepturi quam cum voluptates doloribus quae nisi tempore necessitatibus dolores ducimus enim libero eaque explicabo suscipit animi at quaerat aliquid ex expedita perspiciatis? Saepe, aperiam, nam unde quas beatae vero vitae nulla.</p>
-
-								<div class="line line-sm"></div>
-
-								<h4><strong class="color">Q.</strong> Helpful Resources for Authors</h4>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, placeat, architecto rem dolorem dignissimos repellat veritatis in et eos doloribus magnam aliquam ipsa alias assumenda officiis quasi sapiente suscipit veniam odio voluptatum. Enim at asperiores quod velit minima officia accusamus cumque eligendi consequuntur fuga? Maiores, quasi, voluptates, exercitationem fuga voluptatibus a repudiandae expedita omnis molestiae alias repellat perferendis dolores dolor.</p>
-							</div>
-
-							<div class="col-md-6">
-
-								<h4><strong class="color">Q.</strong> What Images, Videos, Code or Music Can I Use in my Items?</h4>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad odio ab quis architecto recusandae doloremque incidunt! Eius, quidem, pariatur necessitatibus commodi aliquid deleniti repudiandae accusantium nemo voluptate ullam natus illum magnam alias nobis doloremque delectus ipsa dicta repellat maxime dignissimos eveniet quae debitis ratione assumenda tempore officiis fugiat dolor. Saepe iusto praesentium ullam aliquam impedit.</p>
-
-								<div class="line line-sm"></div>
-
-								<h4><strong class="color">Q.</strong> Can I use trademarked names in my items?</h4>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, nisi, laborum autem reprehenderit excepturi harum ipsum quod sit. Inventore et sunt nemo natus labore voluptate omnis reprehenderit culpa. Minus vitae molestiae totam ut a accusamus at fugiat nemo debitis delectus? Consectetur, deleniti, cupiditate ad doloribus numquam minus illum fugit laborum a voluptatum nulla at autem ab beatae odio dolorem assumenda magni laudantium saepe recusandae doloremque illo nesciunt aut quos debitis neque reiciendis veritatis iusto eos aliquid voluptatem pariatur eveniet velit?</p>
-
-							</div>
-							<div class="center col-md-12">
-								<a href="faq.html" class="button button-border button-dark button-rounded button-large noleftmargin topmargin-sm">Learn More</a>
-								
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="container clearfix bottommargin-lg">
-
-					<div id="side-navigation" class="tabs customjs">
-
-						<div id="section-facts" class="page-section heading-block center nobottomborder">
-							<h2>Did you know?</h2>
-							<span>Causes of Hearing Loss</span>
-							</div>
-
-						<div class="page-section col_one_third nobottommargin">
-
-							<ul class="sidenav">
-								<li class="ui-tabs-active"><a href="#snav-content1"><i class="icon-screen"></i>Responsive Layout<i class="icon-chevron-right"></i></a></li>
-								<li><a href="#snav-content2"><i class="icon-magic"></i>Retina Ready Display<i class="icon-chevron-right"></i></a></li>
-								<li><a href="#snav-content3"><i class="icon-tint"></i>Unlimited Color Options<i class="icon-chevron-right"></i></a></li>
-								<li><a href="#snav-content4"><i class="icon-gift"></i>Bootstrap 3.1 Compatible<i class="icon-chevron-right"></i></a></li>
-								<li><a href="#snav-content5"><i class="icon-adjust"></i>Light &amp; Dark Scheme<i class="icon-chevron-right"></i></a></li>
-							</ul>
-
-						</div>
-
-						<div class="col_two_third col_last nobottommargin">
-
-							<div id="snav-content1">
-								<h3>Ultra Responsive Template</h3>
-								<img class="alignright img-responsive" src="images/landing/responsive.png" alt="">
-
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, ex, inventore, tenetur, repellat ipsam soluta libero amet nam aspernatur perspiciatis quos praesentium et debitis ea odit enim illo aliquid eligendi numquam neque. Ipsum, voluptatibus, perspiciatis a quam aliquid cumque cupiditate id ipsa tempora eveniet. Cupiditate, necessitatibus, consequatur odio. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, vitae, laboriosam libero nihil labore hic modi? Odit, veritatis nulla molestiae!
-							</div>
-
-							<div id="snav-content2">
-								<h3>Retina Ready Display</h3>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, voluptatem reprehenderit natus facilis id deserunt iusto incidunt cumque odit molestias iste dolor eum esse soluta facere quidem minima in voluptate explicabo ducimus alias ratione aut molestiae omnis fuga labore quod optio modi voluptatum nemo suscipit porro maxime ex. Maiores, ratione eligendi labore quaerat veniam laborum nam rem delectus illum aspernatur quas sequi animi quae nulla alias hic inventore ex perspiciatis nisi consequatur enim a aut dolorum modi quod perferendis dicta impedit magni placeat repellat. Soluta, dicta, dolores, reiciendis, eum accusamus esse et debitis rem fugit fugiat dignissimos pariatur sint quod laborum autem. Nulla, ducimus, culpa, vel esse unde sapiente expedita corrupti consectetur veritatis quas autem laborum mollmquam amet eius. Numquam, ad, quaerat, ab, deleniti rem quae doloremque tenetur ea illum hic amet dolor suscipit porro ducimus excepturi perspiciatis modi praesentium voluptas quos expedita provident adipisci dolorem! Aliquam, ipsum voluptatem et voluptates impedit ab libero similique a. Nisi, ea magni et ab voluptatum nemo numquam odio quis libero aspernatur architecto tempore qui quisquam saepe corrupti necessitatibus natus quos aliquid non voluptatibus quod obcaecati fugiat quibusdam quidem inventore quia eveniet iusto culpa incidunt vero vel in accusamus eum. Molestiae nihil voluptate molestias illum eligendi esse nesciunt.
-							</div>
-
-							<div id="snav-content3">
-								<img class="alignleft img-responsive" src="https://www.w3schools.com/tags/colormap.gif" alt="">
-								<h3>Unlimited Color Options</h3>Dolor aperiam modi aliquam dolores consequatur error commodi ad eius incidunt! Libero, odio incidunt ullam sunt fugiat? Laboriosam, perferendis, debitis, harum soluta iste eos sunt odit architecto porro eveniet sint optio nihil animi. Laudantium, quam, culpa, velit molestias exercitationem reprehenderit enim distinctio aliquam aut ex numquam sequi assumenda veritatis fuga voluptatum. Magni, voluptates adipisci unde sapiente eligendi ea maxime tempora pariatur ipsa.. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, aspernatur, saepe, quidem animi hic rem libero earum fuga voluptas culpa iure qui accusantium ab quae dolorum laborum quia repellat fugit aut minima molestias placeat mollitia doloribus quibusdam consectetur officia nesciunt ad. Ab, quod ipsum commodi assumenda doloribus possimus sed laudantium.Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-							</div>
-
-							<div id="snav-content4">
-								<img class="alignleft img-responsive" src="images/landing/bootstrap.png" alt="">
-								<h3>Bootstrap v3.2.0 Compatiable</h3>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, nostrum, dolores id quo nam repudiandae ad culpa architecto minima nemo eaque soluta nulla laborum neque provident saepe facilis expedita numquam quas alias in perferendis accusamus ipsam blanditiis sit voluptatem temporibus vero error veritatis repellat eos reiciendis repellendus quam. Officia dicta ipsam nostrum aperiam. Dolor, expedita enim modi nostrum commodi sint architecto aliquam aut mollitia repellendus deserunt quaerat aspernatur aperiam voluptatibus consequatur rerum consequuntur.
-							</div>
-
-							<div id="snav-content5">
-								<h3>Light &amp; Dark Scheme Available</h3>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, temporibus, maxime, laudantium quidem sapiente deserunt error rerum illum explicabo voluptate velit tempora cupiditate reprehenderit consequuntur nemo in et blanditiis soluta tempore perspiciatis at atque excepturi culpa facere sequi impedit cumque illo molestias saepe eveniet ducimus fugiat reiciendis unde. Modi, at laboriosam ex velit commodi officiis! Neque, consequatur, modi, nulla, voluptatem quibusdam incidunt minus dolores repellat nihil consectetur ducimus aliquid. Eaque, tempora voluptatum accusantium expedita obcaecati magnam voluptates consequatur ut harum rem dolor id error. Officia, repudiandae, eos, quibusdam porro eius esse cupiditate non fugit dignissimos delectus et tempora sequi fugiat quo voluptatem temporibus vel obcaecati? Laboriosam, quis obcaecati quas veniam repellendus officiis et quos velit id natus mollitia dacilis ipsum et perspiciatis officia iste cupiditate ducimus nisi consequuntur excepturi dolorum. Sint, architecto, cumque facere officia harum dicta perferendis inventore excepturi sequi explicabo provident omnis dolore quasi fugit molestiae atque id consectetur reprehenderit laborum beatae consequatur similique.
-							</div>
-
-						</div>
-
-					</div>
-
-				</div>
-
-
-				<div class="section nomargin">
-					<div class="container clearfix">
-
-						<div id="section-contact" class="page-section heading-block center nobottomborder bottommargin-lg">
-							<h3>Contact Us</h3>
-							<span>Got any questions? Get in touch with us using the contact form below.
-
-							<div class="divider divider-border divider-center"><i class="icon-email2"></i></div>
-
-							<div class="col_three_fifth">
-								<img src="images/audiology/ashtead_hospital.jpeg">
-							</div>
-							<div class="col_two_fifth col_last">
-								<a href="https://www.ashteadhospital.co.uk/specialist/audiology/mr-piotr-swiatek" target="_blank"><img src="images/audiology/ramsay-health-care_416x416.png" style="width: 100px" alt="Ramsay Health Care">
-								</a>
-								<br>
-								<h4>Ashtead Hospital Clinic Hours</h4>
-								<span>Friday 2:00pm to 6:00pm</span>
-							</div>
-
-							<div class="line line-sm"></div>
-
-							</span>
-						</div>
-
-						<!-- Contact Form
-						============================================= -->
+					<!-- Ashtead Hospital -->
+					<div class="col_full col_last">
 						<div class="col_half">
+							
+							<div class="col_full col_last center">
+								<div class="heading-block">
+									<h4>ASHTEAD HOSPITAL</h4>
+									<!-- <p>The Warren, Ashtead KT21 2SB, UK</p> -->
+								</div>
+							</div>
 
 							<div class="center">
-								<h3>Contact Us</h3>
+								<div class="col_half">
+									<a href="https://www.ashteadhospital.co.uk/specialist/audiology/mr-piotr-swiatek" target="_blank"><img src="images/audiology/ramsay-health-care_2.png" style="height: 150px" alt="Ramsay Health Care">
+									</a>
+								</div>
+
+								<div class="col_half col_last">
+									<img src="images/audiology/ashtead_hospital_2.jpg" style="height: 150px" alt="Ashtead Hospital">
+								</div>
 							</div>
 
-							<div class="contact-widget">
-
-								<div class="contact-form-result"></div>
-
-								<form class="nobottommargin" id="template-contactform" action="https://formspree.io/contact@audiologyplus.co.uk" method="POST">
-
-									<div class="form-process"></div>
-
-									<div class="col_one_third">
-										<label for="template-contactform-name">Name <small>*</small></label>
-										<input type="text" id="template-contactform-name" name="full_name" value="" class="sm-form-control required" />
-									</div>
-
-									<div class="col_one_third">
-										<label for="template-contactform-email">Email <small>*</small></label>
-										<input type="email" id="template-contactform-email" name="_replyto" value="" class="required email sm-form-control" />
-									</div>
-
-									<div class="col_one_third col_last">
-										<label for="template-contactform-phone">Phone</label>
-										<input type="text" id="template-contactform-phone" name="phone" value="" class="sm-form-control" />
-									</div>
-
-									<div class="clear"></div>
-
-									<div class="col_full">
-										<label for="template-contactform-subject">Subject <small>*</small></label>
-										<input type="text" id="template-contactform-subject" name="subject" value="" class="required sm-form-control" />
-									</div>
-
-									<div class="clear"></div>
-
-									<div class="col_full">
-										<label for="template-contactform-message">Message <small>*</small></label>
-										<textarea class="required sm-form-control" id="template-contactform-message" name="message" rows="6" cols="30"></textarea>
-									</div>
-
-									<div class="col_full hidden">
-										<input type="text" id="template-contactform-botcheck" name="template-contactform-botcheck" value="" class="sm-form-control" />
-									</div>
-
-									<div class="col_full">
-										<input type="submit" value="Send Message" id="submit-button" tabindex="5" value="Submit" class="button button-3d nomargin">
-									</div>
-
-								</form>
+							<div class="col_half">
+								<div class="fancy-title title-bottom-border">
+									<h4>Location</h4>
+								</div>
+								<ul class="iconlist nobottommargin">
+									<li>
+										<i class="icon-map-marker color"></i>
+										The Warren,
+										Ashtead KT21 2SB,
+										UK
+									</li>
+								</ul>
 							</div>
 
-						</div><!-- Contact Form End -->
+							<div class="col_half col_last">
+								<div class="fancy-title title-bottom-border">
+									<h4>Clinic Hours</h4>
+								</div>
+								<ul class="iconlist nobottommargin">
+									<li>
+										<i class="icon-time color"></i>
+										<strong>Fridays:</strong> 2PM to 6PM
+									</li>
+								</ul>
+							</div>
+						</div>
 
-						<!-- Google Map
-						============================================= -->
 						<div class="col_half col_last">
 
 							<section id="google-map" class="gmap" style="height: 410px;"></section>
 
-						</div><!-- Google Map End -->
+						</div>
+					</div>
+					<!-- END OF Ashtead Hospital -->
 
+					<div class="divider divider-rounded divider-center">
+						<i class="icon-map-marker"></i>
+					</div>
+
+					<!-- Spire Hospital-->
+					<div class="col_full col_last">
+						<div class="col_half">
+
+							<section id="google-map-2" class="gmap" style="height: 410px;"></section>
+
+						</div>
+
+						<div class="col_half col_last">
+							
+							<div class="col_full col_last center">
+								<div class="heading-block">
+									<h4>SPIRE ST ANTHONY'S HOSPITAL</h4>
+									<!-- <p>801 London Rd, Cheam, Worcester Park, Sutton SM3 9DW, UK</p> -->
+								</div>
+							</div>
+
+							<div class="center">
+								<div class="col_half">
+									<a href="https://www.ashteadhospital.co.uk/specialist/audiology/mr-piotr-swiatek" target="_blank"><img src="images/audiology/spire_logo_2.jpg" style="height: 150px" alt="Ramsay Health Care">
+									</a>
+								</div>
+
+								<div class="col_half col_last">
+									<img src="images/audiology/spire-hospital-2.jpg" style="height: 150px" alt="Ashtead Hospital">
+								</div>
+							</div>
+
+							<div class="col_half">
+								<div class="fancy-title title-bottom-border">
+									<h4>Location</h4>
+								</div>
+								<ul class="iconlist nobottommargin">
+									<li>
+										<i class="icon-map-marker color"></i>
+										801 London Rd,
+										Cheam,
+										Worcester Park,
+										Sutton SM3 9DW,
+										UK
+									</li>
+								</ul>
+							</div>
+
+							<div class="col_half col_last">
+								<div class="fancy-title title-bottom-border">
+									<h4>Clinic Hours</h4>
+								</div>
+								<ul class="iconlist nobottommargin">
+									<li>
+										<i class="icon-time color"></i>
+										<strong>Wednesdays:</strong> 2PM to 6PM
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- END OF Spire Hospital -->
+				</div>
+				
+				<div class="section dark notopmargin nobottommargin" style="background-image: url('images/audiology/people3.jpg'); padding: 0px 0px; background-size: cover; background-position: 50% 30%;">
+					<div class="container clearfix topmargin-lg">
+						<div id="section-contact" class="page-section heading-block center nobottomborder ">
+								<h3>Contact Us</h3>
+						</div>
+						<!-- <div class="col_half">
+							<img src="images/audiology/Lifestyle-img-15.jpg" alt="Contact Us">
+						</div> -->
+						<div class="col_one_fifth"></div>
+						<div class="col_three_fifth center">
+
+								<div class="center">
+									<h4>
+										Got a question? We're here to answer any questions, concerns or inquiries. <br><br>
+									
+										You can also get in touch by calling us at  07380 626000. You can email us at 
+											<a href="mailto:contact@audiologyplus.co.uk" style="color: #8094d8;">contact@audiologyplus.co.uk
+											</a> 
+										or fill out the form below.
+									</h4>
+								</div>
+
+								<div class="contact-widget">
+
+									<div class="contact-form-result"></div>
+
+									<form class="nobottommargin" id="template-contactform" action="https://formspree.io/contact@audiologyplus.co.uk" method="POST">
+
+										<div class="form-process"></div>
+
+										<div class="col_one_third">
+											<label for="template-contactform-name">Name <small>*</small></label>
+											<input type="text" id="template-contactform-name" name="full_name" value="" class="sm-form-control required" />
+										</div>
+
+										<div class="col_one_third">
+											<label for="template-contactform-email">Email <small>*</small></label>
+											<input type="email" id="template-contactform-email" name="_replyto" value="" class="required email sm-form-control" />
+										</div>
+
+										<div class="col_one_third col_last">
+											<label for="template-contactform-phone">Phone</label>
+											<input type="text" id="template-contactform-phone" name="phone" value="" class="sm-form-control" />
+										</div>
+
+										<div class="clear"></div>
+
+										<div class="col_full">
+											<label for="template-contactform-subject">Subject <small>*</small></label>
+											<input type="text" id="template-contactform-subject" name="subject" value="" class="required sm-form-control" />
+										</div>
+
+										<div class="clear"></div>
+
+										<div class="col_full">
+											<label for="template-contactform-message">Message <small>*</small></label>
+											<textarea class="required sm-form-control" id="template-contactform-message" name="message" rows="6" cols="30"></textarea>
+										</div>
+
+										<div class="col_full hidden">
+											<input type="text" id="template-contactform-botcheck" name="template-contactform-botcheck" value="" class="sm-form-control" />
+										</div>
+
+										<div class="col_full">
+											<input type="submit" value="Send Message" id="submit-button" tabindex="5" value="Submit" class="button button-3d nomargin">
+										</div>
+
+									</form>
+								</div>
+
+						</div>
+						<div class="col_one_fifth col_last"></div>
 					</div>
 				</div>
+				
 
 			</div>
 
@@ -516,7 +580,7 @@
 
 							<p>Audiology Plus offers a comprehensive diagnostic hearing assessment for hearing loss, fitting of hearing aids, hearing aid aftercare for patients at the audiology clinic in Ashtead Hospital. <br><br> Contact us if you have any questions, concerns, or if you would like to schedule an appointment.</p>
 
-							<div class="clearfix">
+							<!-- <div class="clearfix">
 								<div class="col_half">
 									<address class="nobottommargin">
 										<h4 class="footer-details">Location</h4>
@@ -526,6 +590,37 @@
 								</div>
 								<div class="col_half col_last">
 									<h4 class="footer-details">Contact</h4>
+									<abbr title="Phone Number"><strong>Phone:</strong></abbr> 07380 626000<br>
+									<abbr title="Email Address"><strong>Email:</strong></abbr> contact@audiologyplus.co.uk
+								</div>
+							</div> -->
+
+							<div class="">
+								<div class="col_half">
+									<h4 class="footer-details">Locations</h4>
+
+									
+										<address class="nobottommargin">
+											<span style="font-weight: bold">Ashtead Hospital</span><br>
+											The Warren<br>
+											Ashtead KT21 2SB<br>
+											UK<br>
+										</address>
+									
+										<br>
+									
+										<address class="nobottommargin">
+											<span style="font-weight: bold">Spire St Anthony's Hospital</span><br>
+											801 London Rd, Cheam<br>
+											Worcester Park, Sutton SM3 9DW<br>
+											UK<br>
+										</address>
+									
+								</div>
+
+								<div class="col_half col_last">
+									<h4 class="footer-details">Contact</h4>
+
 									<abbr title="Phone Number"><strong>Phone:</strong></abbr> 07380 626000<br>
 									<abbr title="Email Address"><strong>Email:</strong></abbr> contact@audiologyplus.co.uk
 								</div>
@@ -544,6 +639,8 @@
 								<span>/</span>
 								<a href="#section-facts" data-scrollto="#section-facts">Facts</a>
 								<span>/</span>
+								<a href="#section-locations" data-scrollto="#section-locations">Locations</a>
+								<span>/</span>
 								<a href="#section-contact" data-scrollto="#section-contact">Contact</a>
 								
 
@@ -553,7 +650,7 @@
 
 					</div>
 
-					<div class="col_half col_last">
+					<div class="col_half col_last topmargin">
 
 						<div style="float: left;">
 						<a href="https://twitter.com/AudiologyPlus?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="true">Follow @AudiologyPlus</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -562,6 +659,21 @@
 						<a class="twitter-timeline" data-dnt="true" data-theme="light" data-link-color="#b12c46" data-tweet-limit="1" data-show-replies="false" data-border-color="#010638" 
 						data-chrome="noheader nofooter noborders noscrollbar transparent"
 						href="https://twitter.com/AudiologyPlus?ref_src=twsrc%5Etfw">Tweets by AudiologyPlus</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+						<div class="row payments-info">
+						<div class="">
+							<ul class="payment-cards clearfix" style="margin-top: 5px;">
+								<li><img src="demos/ecommerce/cards/visa.svg" alt="Visa"></li>
+								<li><img src="demos/ecommerce/cards/mc.svg" alt="Master Card"></li>
+								<!-- <li><img src="demos/cards/ae.svg" alt="American Express"></li>
+								<li><img src="demos/cards/pp.svg" alt="PayPal"></li>
+								<li><img src="demos/cards/sk.svg" alt="Skrill"></li>
+								<li><img src="demos/cards/2co.svg" alt="2CheckOut"></li>
+								<li><img src="demos/cards/wu.svg" alt="Western Union"></li> -->
+							</ul>
+						</div>
+					</div>
 					</div>
 
 				</div><!-- .footer-widgets-wrap end -->
@@ -655,19 +767,19 @@
 		     	"font-weight": "normal"
 			});
 
-			$('#twitter-widget-1').contents().find('.timeline-Tweet-media')
-			.css({
-				"max-width": "350px"
-			});
+			// $('#twitter-widget-1').contents().find('.timeline-Tweet-media')
+			// .css({
+			// 	"max-width": "350px"
+			// });
 
-			$('#twitter-widget-1').css('height', 'inherit');
+			// $('#twitter-widget-1').css('height', 'inherit');
 		});
 
 		var main_color = '#d8ac00',
 			saturation_value= -30,
 			brightness_value= 5
 
-		var style = [ 
+		var styles = [ 
 			{
 				// set saturation for the labels on the map
 				elementType: "labels",
@@ -838,14 +950,54 @@
 		];
 
 		jQuery('#google-map').gMap({
-			address: 'Ashtead Hospital, The Warren, Ashtead KT21 2SB, UK',
+			address: 'The Warren, Ashtead KT21 2SB, UK',
 			maptype: 'ROADMAP',
 			zoom: 15,
-			styles: style,
 			markers: [
 				{
 					address: "Ashtead Hospital, UK",
-					html: '<div style="width: 300px;"><h4 style="margin-bottom: 8px;"><span>Audiology Plus</span></h4><p class="nobottommargin">Audiology Plus offers a comprehensive diagnostic hearing assessment for hearing loss, fitting of hearing aids and hearing aid aftercare for patients.</div>',
+					html: '<div style="width: 300px;"><h4 style="margin-bottom: 8px;"><span>Ashtead Hospital</span></h4><p class="nobottommargin">The Warren, Ashtead KT21 2SB, UK</div>',
+					icon: {
+						image: "images/icons/map-icon-red.png",
+						iconsize: [32, 39],
+						iconanchor: [32,39]
+					}
+				}
+			],
+			//centerAt: { latitude: 51.304251, longitude: -0.300173, zoom: 15 },
+			doubleclickzoom: false,
+	        controls: {
+	            panControl: true,
+	            zoomControl: true,
+	            mapTypeControl: true,
+	            scaleControl: false,
+	            streetViewControl: false,
+	            overviewMapControl: false
+	        },
+			styles: styles
+		});
+
+		// $('#google-map').gMap('centerAt', {
+		// 	latitude: 51.304251,
+		// 	longitude: -0.300173,
+		// 	zoom: 15
+		// });
+
+		// $('#google-map').gMap('setOptions', {
+		// 	centerOnResize: true
+		// });
+
+
+
+		jQuery('#google-map-2').gMap({
+			address: '801 London Rd, Cheam, Worcester Park, Sutton SM3 9DW, UK',
+			maptype: 'ROADMAP',
+			zoom: 15,
+			styles: styles,
+			markers: [
+				{
+					address: "Spire St Anthony's Hospital, UK",
+					html: '<div style="width: 300px;"><h4 style="margin-bottom: 8px;"><span>Spire St Anthony\'s Hostpital</span></h4><p class="nobottommargin">801 London Rd, Cheam, Worcester Park, Sutton SM3 9DW, UK</div>',
 					icon: {
 						image: "images/icons/map-icon-red.png",
 						iconsize: [32, 39],
@@ -863,7 +1015,6 @@
 				overviewMapControl: false
 			}
 		});
-
 	</script>
 
 </body>
