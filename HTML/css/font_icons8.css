@@ -1,0 +1,63 @@
+/*
+ * Icon Font font_icons8
+ * Made with love by Icons8 [ https://icons8.com/ ] using FontCustom [ https://github.com/FontCustom/fontcustom ]
+ *
+ * Contacts:
+ *    [ https://icons8.com/contact ]
+ *
+ * Follow Icon8 on
+ *    Twitter [ https://twitter.com/icons_8 ]
+ *    Facebook [ https://www.facebook.com/Icons8 ]
+ *    Google+ [ https://plus.google.com/+Icons8 ]
+ *    GitHub [ https://github.com/icons8 ]
+ */
+
+
+@font-face {
+  font-family: "font_icons8";
+  src: url("fonts/font_icons8_86fc11d8cad67a4751fb6c3d81627cda.eot");
+  src: url("fonts/font_icons8_86fc11d8cad67a4751fb6c3d81627cda.eot?#iefix") format("embedded-opentype"),
+       url("fonts/font_icons8_86fc11d8cad67a4751fb6c3d81627cda.woff2") format("woff2"),
+       url("fonts/font_icons8_86fc11d8cad67a4751fb6c3d81627cda.woff") format("woff"),
+       url("fonts/font_icons8_86fc11d8cad67a4751fb6c3d81627cda.ttf") format("truetype"),
+       url("fonts/font_icons8_86fc11d8cad67a4751fb6c3d81627cda.svg#font_icons8") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "font_icons8";
+    src: url("fonts/font_icons8_86fc11d8cad67a4751fb6c3d81627cda.svg#font_icons8") format("svg");
+  }
+}
+
+[data-icons8]:before { content: attr(data-icons8); }
+
+.icons8, [data-icons8]:before,
+.icons8-ear-ache:before,
+.icons8-hearing:before,
+.icons8-hearing-aid:before,
+.icons8-hearing-aid-2:before,
+.icons8-listen:before,
+.icons8-listening:before {
+  display: inline-block;
+  font-family: "font_icons8";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+.icons8-ear-ache:before { content: "\f103"; }
+.icons8-hearing:before { content: "\f100"; }
+.icons8-hearing-aid:before { content: "\f104"; }
+.icons8-hearing-aid-2:before { content: "\f105"; }
+.icons8-listen:before { content: "\f102"; }
+.icons8-listening:before { content: "\f101"; }
