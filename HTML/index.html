@@ -39,8 +39,6 @@
 	<style>
 		.form-control.error { border: 2px solid red; }
 	</style>
-
-	<script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 
 <body class="stretched">
@@ -145,11 +143,8 @@
 							<div class="light-overlay">
 								<div class="container clearfix">
 									<div class="">
-										<!-- <div class="slider-caption slider-caption-center" style="max-width: 700px;"> -->
 										<div class="slider-caption slider-caption-center">
-											<!-- <h2 data-caption-animate="flipInX">Committed to <span>changing</span> lives<span>.</span></h2> -->
 											<h2 data-caption-animate="flipInX">Committed to <span>changing</span> lives<span>.</span></h2>
-											<!-- <p data-caption-animate="flipInX" data-caption-delay="500">At Audiology Plus, you can trust in our experience and expertise to provide you with the highest quality of clinical care.</p> -->
 											<p data-caption-animate="flipInX" data-caption-delay="500">At Audiology Plus, you can trust in our experience and expertise to provide you with the highest quality of clinical care.</p>
 											<a href="#section-contact" data-scrollto="#section-contact" class="button button-rounded font-primary" data-caption-animate="flipInX" data-caption-delay="500">CONTACT US</a>
 										</div>
@@ -163,9 +158,7 @@
 								<div class="container clearfix">
 									<div class="slider-caption slider-caption-center">
 										<div class=""></div>
-										
 										<h2 data-caption-animate="zoomIn">Live<span> life</span> without restrictions<span>.</span></h2>
-										
 										<p data-caption-animate="zoomIn" data-caption-delay="500">We understand the importance of providing the best care possible for all patients tailored to their individual needs.</p>
 									</div>
 								</div>
@@ -427,7 +420,7 @@
 							<div class="col_full col_last center">
 								<div class="heading-block">
 									<h4>ASHTEAD HOSPITAL</h4>
-									<!-- <p>The Warren, Ashtead KT21 2SB, UK</p> -->
+									<p>Click <a href="https://www.ashteadhospital.co.uk/specialist/audiology/mr-piotr-swiatek" target="_blank">here</a> to view our profile page</p>
 								</div>
 							</div>
 
@@ -494,18 +487,18 @@
 							<div class="col_full col_last center">
 								<div class="heading-block">
 									<h4>SPIRE ST ANTHONY'S HOSPITAL</h4>
-									<!-- <p>801 London Rd, Cheam, Worcester Park, Sutton SM3 9DW, UK</p> -->
+									<p>Click <a href="https://www.spirehealthcare.com/consultant-profiles/mr-piotr-swiatek/" target="_blank">here</a> to view our profile page</p>
 								</div>
 							</div>
 
 							<div class="center location-images">
 								<div class="col_half">
-									<a href="https://www.ashteadhospital.co.uk/specialist/audiology/mr-piotr-swiatek" target="_blank"><img src="images/audiology/spire_logo_2.jpg" style="height: 150px" alt="Ramsay Health Care">
+									<a href="https://www.spirehealthcare.com/consultant-profiles/mr-piotr-swiatek/" target="_blank"><img src="images/audiology/spire_logo_2.jpg" style="height: 150px" alt="Ramsay Health Care">
 									</a>
 								</div>
 
 								<div class="col_half col_last">
-									<img src="images/audiology/spire-hospital-2.jpg" style="height: 150px" alt="Ashtead Hospital">
+									<img src="images/audiology/spire-hospital-2.jpg" style="height: 150px" alt="Spire St Anthony's Hospital">
 								</div>
 							</div>
 
@@ -565,7 +558,7 @@
 
 									<div class="contact-form-result"></div>
 
-									<form class="nobottommargin" id="template-contactform" action="https://formspree.io/contact@sangeeta.io" method="POST" onsubmit="check_if_capcha_is_filled">
+									<form class="nobottommargin" id="template-contactform" action="https://formspree.io/contact@sangeeta.io" method="POST" xonsubmit="return xcheck_if_capcha_is_filled();">
 
 										<div class="form-process"></div>
 
@@ -605,12 +598,7 @@
 										<div class="col_full hidden">
 											<input type="text" name="_gotcha" style="display:none" />
 										</div>
-
-										<!-- <div class="captcha"> -->
-											<div class="g-recaptcha" data-sitekey="6LfewUIUAAAAANEZYF7IQo__7gq3ss06xVfL9M2O"></div>
-										<!-- </div> -->
 										
-
 										<div class="col_full">
 											<input type="submit" value="Send Message" id="submit-button" tabindex="5" value="Submit" class="button button-3d nomargin">
 										</div>
@@ -781,28 +769,6 @@
 	<!-- Footer Scripts
 	============================================= -->
 	<script type="text/javascript" src="js/functions.js"></script>
-
-	<!-- <script>
-		// variable that stores 1 or 0 depending or whether the user filled the capcha correctly
-		var allowSubmit = false;
-
-		// function which gets executed when the user fills the reCapcha correctly
-		function capcha_filled () {
-		    allowSubmit = true;
-		}
-
-		// function that gets executed when the reCapcha session expires
-		function capcha_expired () {
-		    allowSubmit = false;
-		}
-
-		// callback for the form submission
-		function check_if_capcha_is_filled (e) {
-		    if(allowSubmit) return true;
-		    e.preventDefault();
-		    alert('Fill in the capcha!');
-		}
-	</script> -->
 
 	<script type="text/javascript">
 		$(function() {
@@ -1018,6 +984,7 @@
 			}
 		];
 
+		// Ashtead Hospital Map
 		jQuery('#google-map').gMap({
 			address: 'Ashtead Hospital, The Warren, Ashtead KT21 2SB, UK',
 			maptype: 'ROADMAP',
@@ -1033,7 +1000,6 @@
 					}
 				}
 			],
-			//centerAt: { latitude: 51.304251, longitude: -0.300173, zoom: 15 },
 			doubleclickzoom: false,
 	        controls: {
 	            panControl: true,
@@ -1046,10 +1012,8 @@
 			styles: styles
 		});
 
-		// jQuery('#google-map').gMap('centerAt', { latitude: 51.304251, longitude: -0.300173, zoom: 15 });
 
-
-
+		// St Anthony's Spire Hospital Map
 		jQuery('#google-map-2').gMap({
 			address: 'Spire St Anthony\'s Hospital, 801 London Rd, Cheam, Worcester Park, Sutton SM3 9DW, UK',
 			maptype: 'ROADMAP',

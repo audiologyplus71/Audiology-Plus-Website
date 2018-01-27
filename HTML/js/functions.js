@@ -3251,6 +3251,17 @@ var SEMICOLON = SEMICOLON || {};
 								}
 								if( $(form).find('.g-recaptcha').children('div').length > 0 ) { grecaptcha.reset(); }
 								if( data.alert != 'error' ) { $(form).clearForm(); }
+							},
+							error: function(data) {
+								// If there was an error, stop loader and toastr the error.
+
+								if( elementLoader == 'button' ) {
+									defButton.html( defButtonText );
+								} else {
+									$(form).find('.form-process').fadeOut();
+								}
+
+								toastr.error(data.responseJSON.error)
 							}
 						});
 					}
