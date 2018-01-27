@@ -3,7 +3,7 @@
 <head>
 
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	<meta name="author" content="SemiColonWeb" />
+	<meta name="author" content="Audiology Plus LTD." />
 
 	<!-- Favicon
 	============================================= -->
@@ -769,6 +769,28 @@
 	<!-- Footer Scripts
 	============================================= -->
 	<script type="text/javascript" src="js/functions.js"></script>
+
+	<script>
+	    jQuery(document).ready( function(){
+	        setTimeout(function() {
+	            if (location.hash) {
+	                window.scrollTo(0, 0);
+	            }
+	        }, 1);
+	    });
+	 
+	    jQuery(window).on('load', function(){
+	        var divScrollToAnchor = window.location.hash;
+	 
+	        if( typeof divScrollToAnchor !== 'undefined' ) {
+	            var t = setTimeout( function(){
+	                $('html,body').stop(true).animate({
+	                    'scrollTop': $( divScrollToAnchor ).offset().top - 100
+	                }, 700, 'easeOutQuad');
+	            }, 1000);
+	        }
+	    });
+	</script>
 
 	<script type="text/javascript">
 		$(function() {
