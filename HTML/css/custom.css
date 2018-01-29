@@ -30,6 +30,27 @@
 .dark label {
 	color: #ffffff;
 }
+
+/* Twitter Widget Styles
+-----------------------------------------------------------------*/
+.timeline-Widget {
+	color: #CCC;
+ 	font-family: 'Lato', sans-serif;
+ 	font-size: 14px;
+}
+
+.timeline-Tweet-text {
+	color: #CCC;
+	opacity: 0.8;
+	font-family: 'Lato' ,sans-serif;
+	font-style: normal;
+	font-size: 14px;
+ 	line-height: 1.42857143;
+ 	font-weight: normal;
+}
+
+
+
 /* Facts section
 -----------------------------------------------------------------*/
 #custom-pattern {
@@ -402,7 +423,8 @@ blockquote footer {
 	}
 
 	.location-images > .col_half img {
-		height: 120px !important;
+		/*height: 120px !important;*/
+		height: 100px !important;
 	}
 
 }
