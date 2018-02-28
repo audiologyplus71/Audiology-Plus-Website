@@ -23,6 +23,21 @@
 	
 }
 
+.promo.promo-dark {
+	/*background: #fffbd5 !important;  
+	background: -webkit-linear-gradient(to right, #9c0624, #db7288) !important;  
+	background: linear-gradient(to right, #9c0624, #db7288) !important; */
+
+	background: #fffbd5 !important;  
+	background: -webkit-linear-gradient(to right, #9c0624, #db7288) !important;  
+	background: linear-gradient(to right, #1a3169, #2a609c) !important
+}
+
+.promo.promo-dark > span, 
+.promo.promo-dark > .container > span {
+	color: white;
+}
+
 /*.dark .form-control:not(.not-dark), .dark .sm-form-control:not(.not-dark) {
 	background-color: rgba(255, 255, 255, 0.4) !important;
 }*/
@@ -327,6 +342,10 @@ blockquote footer {
     padding-bottom: 20px;
 }
 
+.hospital-logos {
+	text-align: center;
+}
+
 .cert {
 	text-align: center;
 	width: 275px;
@@ -336,6 +355,44 @@ blockquote footer {
     color: #fff;
     background-color: rgba(0, 0, 0, 0.3);
     border-color: rgba(0,0,0,0.25);
+}
+
+/*.fbox-heading {
+	height: 50px;
+	margin-bottom: 5px;
+}
+
+.feature-box.fbox-plain.fbox-small .fbox-icon i {
+	font-size: 48px;
+}
+
+.feature-box.fbox-plain.fbox-small h3 {
+	margin-left: 20px;
+	font-size: 20px;
+	padding-top: 7px;
+}*/
+
+/*.fbox-heading {
+	height: 50px;
+	margin-bottom: 5px;
+}*/
+
+/*.feature-box.fbox-plain.fbox-small .fbox-icon i {
+	font-size: 48px;
+}
+
+.feature-box.fbox-plain.fbox-small h3 {
+	margin-left: 20px;
+	font-size: 20px;
+	padding-top: 7px;
+}*/
+
+.feature-box {
+	padding: 0px;
+}
+
+.fbox-desc i {
+	font-size: 45px;
 }
 
 @media (min-width: 1200px) {
@@ -395,7 +452,7 @@ blockquote footer {
 	}
 
 	blockquote p {
-		font-size: 14px;
+		font-size: 15px;
 	}
 
 	#top-bar { display: none; }
@@ -423,6 +480,10 @@ blockquote footer {
 	.hospital-logos > div {
 		flex: 0 0 50%;
 	}
+
+	.cert {
+		width: 230px;
+	}
 }
 
 @media (max-width: 479px) {
@@ -439,6 +500,10 @@ blockquote footer {
 		font-size: 18px;
 		line-height: 25px;
 		margin-top: 10px;
+	}
+
+	.cert {
+		width: 230px;
 	}
 
 }
