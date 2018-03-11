@@ -23,6 +23,11 @@
 	
 }
 
+/*.TwitterCard-container--clickable:hover {
+	background: #9f2343;
+	color: white;
+}*/
+
 .promo.promo-dark {
 	/*background: #fffbd5 !important;  
 	background: -webkit-linear-gradient(to right, #9c0624, #db7288) !important;  
@@ -38,6 +43,13 @@
 	color: white;
 }
 
+.promo a > i {
+	position: absolute;
+    top: 50%;
+    margin: -18px 0 0;
+    color: white;
+    font-size: 45px;
+}
 /*.dark .form-control:not(.not-dark), .dark .sm-form-control:not(.not-dark) {
 	background-color: rgba(255, 255, 255, 0.4) !important;
 }*/
@@ -391,8 +403,35 @@ blockquote footer {
 	padding: 0px;
 }
 
+.feature-box p {
+	color: #555;
+}
+
 .fbox-desc i {
 	font-size: 45px;
+}
+
+.promo.promo-dark > h3 span,
+.promo.promo-dark > .container > h3 span {
+	font-weight: 700;
+	color: #95bcec;
+	background-color: transparent;
+}
+
+.promo.promo-dark h4 {
+	color: #e5e5e5;
+    font-weight: normal;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.slider-caption-bg.hearing-aid-caption {
+	background-color: rgb(156, 27, 55) !important;
+}
+
+.flex-caption.hearing-aid-caption {
+	color: #fff !important;
+	font-size: 17px !important;
 }
 
 @media (min-width: 1200px) {
@@ -483,6 +522,24 @@ blockquote footer {
 
 	.cert {
 		width: 230px;
+	}
+
+	.locations_contact {
+		display: flex;
+	    flex-wrap: wrap;
+	    align-content: flex-end;
+	}
+	
+	.locations_child {
+		flex: 0 0 33%;
+	}
+
+	.contacts_child {
+		flex: 0 0 33%;
+	}
+
+	.locations_child {
+		flex: 0 0 33%;
 	}
 }
 
