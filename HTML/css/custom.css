@@ -478,6 +478,31 @@ blockquote footer {
 	{
 		height: 500px !important;
 	}
+
+	#hearing-aids-slider {
+		width: 100%;
+	}
+
+	#hearing-aids-caption-img {
+		width: 100%;
+	}
+
+	.hearing-aids-caption-img-container {
+		display: flex;
+	    flex-wrap: wrap;
+	    align-content: flex-end;
+	}
+
+	.hearing-aids-caption-img-container .title-block
+ 	{
+		flex: 0 0 50%;
+	}
+
+	.hearing-aids-caption-img-container img {
+		flex: 0 0 50%;
+	    width: 50%;
+	    height: 50%;
+	}
 }
 
 @media (max-width: 767px) {
