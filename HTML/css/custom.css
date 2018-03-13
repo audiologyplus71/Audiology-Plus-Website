@@ -4,6 +4,35 @@
 	Add all your Custom Styled CSS here for New Styles or
 	Overwriting Default Theme Styles for Better Hanlding Updates
 -----------------------------------------------------------------*/
+body {
+	color: #222 !important;
+}
+
+.heading-block h1,
+.heading-block h2,
+.heading-block h3,
+.heading-block h4,
+.emphasis-title h1,
+.emphasis-title h2 {
+	color: #030b53;
+}
+
+.heading-block > span:not(.before-heading) {
+	font-weight: 390;
+	color: inherit;
+}
+
+.dark, .dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6 {
+	color: #fff;
+}
+
+.dark .sidenav > li > a {
+	color: #fff;
+}
+
+.dark .sidenav {
+	background-color: rgb(17, 42, 101);
+}
 
 .light-overlay {
 	background-color: rgba(255, 255, 255, 0.7);
@@ -29,10 +58,6 @@
 }*/
 
 .promo.promo-dark {
-	/*background: #fffbd5 !important;  
-	background: -webkit-linear-gradient(to right, #9c0624, #db7288) !important;  
-	background: linear-gradient(to right, #9c0624, #db7288) !important; */
-
 	background: #fffbd5 !important;  
 	background: -webkit-linear-gradient(to right, #9c0624, #db7288) !important;  
 	background: linear-gradient(to right, #1a3169, #2a609c) !important
@@ -58,6 +83,14 @@
 	color: #ffffff;
 }
 
+.divider.divider-rounded {
+	color: #fff;
+}
+
+.divider.divider-rounded i, .divider.divider-border i {
+	background-color: #9c1c37;
+}
+
 /* Twitter Widget Styles
 -----------------------------------------------------------------*/
 .timeline-Widget {
@@ -81,33 +114,22 @@
 /* Facts section
 -----------------------------------------------------------------*/
 #custom-pattern {
-	/*background: #000046; 
-	background: -webkit-linear-gradient(to left, #1CB5E0, #000046);
-	background: linear-gradient(to left, #1CB5E0, #000046);*/
-
-	background: #4b6cb7; 
+	/*background: #4b6cb7; 
 	background: -webkit-linear-gradient(to left, #4b6cb7, #182848);
-	background: linear-gradient(to left, #4b6cb7, #182848);
+	background: linear-gradient(to left, #4b6cb7, #182848);*/
+
+	background: #1a3169;
+	background: -webkit-linear-gradient(to right, #1a3169, #2a609c);
+	background: linear-gradient(to right, #1a3169, #2a609c);
 
 	margin-bottom: 0;
-
-
-
-	/*background: #870000;*/  /* fallback for old browsers */
-	/*background: -webkit-linear-gradient(to left, #190A05, #870000);*/  /* Chrome 10-25, Safari 5.1-6 */
-	/*background: linear-gradient(to left, #190A05, #870000);  W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-
-	/*background-color: #ffffff;
-	background-image: url("data:image/svg+xml,%3Csvg width='' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%239d001f' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");*/
 }
 
 .sidenav > .ui-tabs-active > a,
 .sidenav > .ui-tabs-active > a:hover {
-	/*background-color: #f5f5f5 !important;
-	color: #ac0023 !important;*/
-
 	background-color: #5b6e9a !important;
+	background-color: #5e99e0 !important;
+	background-color: #2c4f9a !important;
 	color: #ffffff !important;
 }
 
@@ -403,8 +425,13 @@ blockquote footer {
 	padding: 0px;
 }
 
-.feature-box p {
-	color: #555;
+.feature-box h3 {
+	color: #030a52;
+}
+
+.feature-box p, .hospital-location {
+	/*color: #555;*/
+	color: #09148c;
 }
 
 .fbox-desc i {
@@ -414,12 +441,13 @@ blockquote footer {
 .promo.promo-dark > h3 span,
 .promo.promo-dark > .container > h3 span {
 	font-weight: 700;
-	color: #95bcec;
+	color: #fff;
 	background-color: transparent;
 }
 
 .promo.promo-dark h4 {
 	color: #e5e5e5;
+	color: #fff;
     font-weight: normal;
     font-size: 20px;
     margin-bottom: 10px;
