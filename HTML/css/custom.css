@@ -150,6 +150,17 @@ body {
 
 #footer .footer-widgets-wrap {
     padding: 40px 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;	
+}
+
+.footer-widgets-wrap > .col_half {
+	flex: 1;
+}
+
+.footer-widgets-wrap:first-child {
+	position: relative;
 }
 
 .footer-page-links li {
@@ -172,10 +183,16 @@ body {
 }
 
 .page-links {
-	display: inline-block;
-	margin-top: 30px;
+	
+	margin-top: 20px;
 	font-size: 14px;
-	border-bottom: 0 !important;
+	color: #1534a3;
+	position: absolute;
+    bottom: 0px;
+}
+
+.page-links a {
+	color: #901c33 !important;
 }
 
 .page-links span{
@@ -329,9 +346,12 @@ body {
     max-width: 250px;
 }
 
+.payments-info {
+	text-align: center;
+}
+
 .payment-cards {
 	list-style: none;
-	text-align: right;
 	margin: 0;
 }
 
@@ -533,11 +553,13 @@ blockquote footer {
 #main-facts-tabs {
     text-transform: uppercase;
     font-size: 16px;
+    letter-spacing: 1px;
 }
 
 .tabbable-line .nav-tabs > li.active > a {
   border: 0;
   color: #333333;
+  font-weight: bold;
 }
 .tabbable-line > .nav-tabs > li.active > a > i {
   color: #404040;
@@ -588,23 +610,23 @@ blockquote footer {
 }
 
 /* Main facts tab, active and hover colors */
-/*#main-facts-tabs.nav-tabs > li.active {
-	border-bottom: 4px solid blue;
+#main-facts-tabs.nav-tabs > li.active {
+	border-bottom: 4px solid #0a168c;
   	position: relative;
 }
 
 #main-facts-tabs.nav-tabs > li.open, #main-facts-tabs.nav-tabs > li:hover {
-  	border-bottom: 4px solid #69699e;
-}*/
+  	border-bottom: 4px solid #828ad6;
+}
 /* Sub facts tab, active and hover colors */
-/*#sub-facts-tabs .tab-pane  .nav-tabs > li.active {
-	border-bottom: 4px solid green;
+#sub-facts-tabs .tab-pane  .nav-tabs > li.active {
+	border-bottom: 4px solid #ac072a;
   	position: relative;
 }
 
 #sub-facts-tabs .tab-pane .nav-tabs > li.open, #sub-facts-tabs .tab-pane .nav-tabs > li:hover {
-  	border-bottom: 4px solid #7ab183;
-}*/
+  	border-bottom: 4px solid #ef9bad;
+}
 
 
 .tab-content-last {
@@ -646,6 +668,38 @@ blockquote footer {
     text-transform: uppercase;
     font-size: 18px;
 }
+
+#hospital-info {
+	display: flex;
+	flex-wrap: wrap;
+	align-content: flex-end;
+}
+
+#hospital-info .col_one_third {
+	flex: 1;
+}
+
+#hospital-info .col_one_third .heading-block,
+#hospital-info .col_one_third .clinic-location-time  {
+	height: 100px;
+	padding-left: 10%;
+    padding-right: 10%;
+}
+
+#hospital-info .col_one_third .clinic-img img {
+	width: 80%;
+}
+
+.locations_contact h4 {
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+/*.payments-info,*/ 
+/*.payment-cards {
+	text-align: center;
+}*/
+
 /* -------------------------------------------------- */
 
 @media (min-width: 1200px) {
@@ -667,20 +721,16 @@ blockquote footer {
 		width: 275px;
 	}
 
-	.payments-info { text-align: center; }
-
-	.payment-cards {
-		margin-top: 40px;
-		text-align: center;
-	}
-
 	.portfolio-single-content, .portfolio-single-image {
 		width: 100%;
 	}
 
 	.location-images > .col_half img {
-		/*height: 120px !important;*/
 		height: 100px !important;
+	}
+
+	.footer-widgets-wrap > .col_half:last-child {
+		margin-top: 30px;
 	}
 
 }
@@ -717,6 +767,32 @@ blockquote footer {
 	    width: 50%;
 	    height: 50%;
 	}
+
+	#hospital-info .col_one_third .clinic-text {
+		flex: 0 0 50%;
+	}
+
+	#hospital-info .col_one_third .clinic-img {
+		flex: 0 0 50%;
+	}
+
+	#hospital-info .col_one_third {
+		flex: 0 0 100%;
+		display: flex;
+	}
+
+	#hospital-info .clinic-text {
+		text-align: center !important;
+		padding-right: 20px;
+	}
+
+	#hospital-info .col_one_third .clinic-text .heading-block {
+	    height: auto;
+	}
+
+	#hospital-info .clinic-text .clinic-location-time ul {
+		text-align: center !important;
+	}
 }
 
 @media (max-width: 767px) {
@@ -734,6 +810,33 @@ blockquote footer {
 	}
 
 	#top-bar { display: none; }
+
+	#hospital-info .col_one_third {
+		flex: none;
+	}
+
+	#hospital-info .col_one_third {
+		flex: none;
+	}
+
+	#hospital-info .col_one_third .clinic-text .heading-block {
+	    margin-bottom: 20px;
+	    height: auto;
+	}
+
+	#hospital-info .col_one_third .clinic-img {
+		margin-bottom: 45px !important;
+	}
+
+	.footer-widgets-wrap > .col_half {
+		flex: 0 0 100%;
+	}
+
+	.page-links {
+		bottom: -30px;
+	}
+
+
 }
 
 @media (min-width: 480px) and (max-width: 767px) {
@@ -761,24 +864,6 @@ blockquote footer {
 
 	.cert {
 		width: 230px;
-	}
-
-	.locations_contact {
-		display: flex;
-	    flex-wrap: wrap;
-	    align-content: flex-end;
-	}
-	
-	.locations_child {
-		flex: 0 0 33%;
-	}
-
-	.contacts_child {
-		flex: 0 0 33%;
-	}
-
-	.locations_child {
-		flex: 0 0 33%;
 	}
 }
 
