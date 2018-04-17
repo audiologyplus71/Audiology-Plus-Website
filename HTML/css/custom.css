@@ -32,7 +32,8 @@ body {
 }
 
 .dark .sidenav {
-	background-color: rgb(17, 42, 101);
+	/*background-color: rgb(17, 42, 101);*/
+	background-color: rgb(10, 19, 97);
 }
 
 .light-overlay {
@@ -125,9 +126,12 @@ body {
 
 .sidenav > .ui-tabs-active > a,
 .sidenav > .ui-tabs-active > a:hover {
-	background-color: #5b6e9a !important;
+	/*background-color: #5b6e9a !important;
 	background-color: #5e99e0 !important;
-	background-color: #2c4f9a !important;
+	background-color: #2c4f9a !important;*/
+
+	background-color: #1253ad !important;
+	/*background-color: #790c20 !important;*/
 	color: #ffffff !important;
 }
 
@@ -215,6 +219,16 @@ body {
 #footer.dark .social-icon.si-borderless {
     color: #9f2243 !important;
 }
+
+/* Parallax - other pages */
+#page-title.page-title-parallax h1 {
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+}
+
+#page-title.page-title-parallax {
+	background-size: cover;
+}
+/*------------------------------------------------------------*/
 
 
 /* Slider Caption
@@ -709,6 +723,40 @@ blockquote footer {
 	margin-bottom: 10px;
 }
 
+.clinic-img {
+	position: relative;
+    overflow: hidden;
+}
+
+.clinic-coming-soon {
+	position: absolute;
+    top: 0;
+    left: 0;
+    left: 10%;
+    /*width: 100%;
+    height: 100%;*/
+    width: 80%;
+    height: 100%;
+    opacity: 1;
+    z-index: 2;
+    text-align: center;
+    /*background-color: rgba(0,0,0,.5);*/
+    /*background-color: rgba(164, 0, 33, 0.46);*/
+    background-color: rgba(125, 1, 26, 0.6)
+}
+
+.clinic-coming-soon h3 {
+	text-align: center;
+	color: white;
+	font-weight: 600;
+	position: relative;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.9);
+    top: 50%;
+    transform: translateY(-50%);
+}
+
 /*.payments-info,*/ 
 /*.payment-cards {
 	text-align: center;
@@ -788,6 +836,10 @@ blockquote footer {
 
 	#hospital-info .col_one_third .clinic-img {
 		flex: 0 0 50%;
+	}
+
+	.clinic-coming-soon {
+		height: 75%;
 	}
 
 	#hospital-info .col_one_third {
