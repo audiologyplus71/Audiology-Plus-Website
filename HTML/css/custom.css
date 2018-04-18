@@ -899,7 +899,8 @@ blockquote footer {
 	}
 
 	#page-title.facts-page-title {
-		background-size: auto !important;
+		/*background-size: auto !important;*/
+		background-size: contain !important;
 	}
 }
 
@@ -945,7 +946,8 @@ blockquote footer {
 	}
 
 	#page-title.facts-page-title {
-		background-position: 18% 66px !important;
+		/*background-position: 18% 66px !important;*/
+		background-position: 81% 66px !important
 	}
 
 	#page-title.about-page-title {
