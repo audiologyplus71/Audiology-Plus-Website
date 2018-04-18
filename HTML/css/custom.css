@@ -161,7 +161,8 @@ body {
 #footer.dark, .dark #footer {
     /*background-color: #010638;*/
     background-color: #060d54;
-    color: #CCC;
+    /*color: #CCC;*/
+    color: #FFF;
     border-top-color: rgba(0,0,0,0.2);
 }
 
@@ -222,11 +223,12 @@ body {
 
 /* Parallax - other pages */
 #page-title.page-title-parallax h1 {
-	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+	/*text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.9);*/
+	text-shadow: none;
 }
 
 #page-title.page-title-parallax {
-	background-size: cover;
+	background-size: auto;
 }
 /*------------------------------------------------------------*/
 
@@ -763,14 +765,50 @@ blockquote footer {
 }*/
 
 /* -------------------------------------------------- */
+@media (min-width: 2278px) {
+	#page-title.about-page-title {
+		background-size: cover !important;
+		background-position: 50% -1.5px;
+	}
+}
+
+@media (min-width: 1200px) and (max-width: 2278px) {
+	#page-title.about-page-title {
+		background-size: contain !important;
+		background-position: 50% -1.5px;
+	}
+}
+
+@media (max-width: 2001px) {
+	#page-title.facts-page-title {
+		background-size: auto !important;
+	}
+}
+
+@media (min-width: 991px) and (max-width: 2000px) {
+	#page-title.facts-page-title {
+		background-size: contain !important;
+	}
+}
 
 @media (min-width: 1200px) {
 	#about-container { width: 1000px; }
+
+	#page-title.about-page-title {
+		background-size: contain !important;
+		background-position: 50% 116.6px !important;
+	}
 }
 
 @media (min-width: 768px) and (max-width: 1200px) {
 	blockquote p {
 		font-size: 16px;
+	}
+	
+	#page-title.about-page-title {
+		background-size: cover !important;
+	    /*background-position: 23% 0;*/
+	    background-position: 31% 36px;;
 	}
 }
 
@@ -859,6 +897,10 @@ blockquote footer {
 	#hospital-info .clinic-text .clinic-location-time ul {
 		text-align: center !important;
 	}
+
+	#page-title.facts-page-title {
+		background-size: auto !important;
+	}
 }
 
 @media (max-width: 767px) {
@@ -900,6 +942,15 @@ blockquote footer {
 
 	.page-links {
 		bottom: -30px;
+	}
+
+	#page-title.facts-page-title {
+		background-position: 18% 66px !important;
+	}
+
+	#page-title.about-page-title {
+		background-size: cover;
+		background-position: 33% -9px;
 	}
 
 

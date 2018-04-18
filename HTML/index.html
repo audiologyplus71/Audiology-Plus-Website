@@ -856,7 +856,7 @@
 						<a href="https://twitter.com/AudiologyPlus?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="true">Follow @AudiologyPlus</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 						</div>
 
-						<a class="twitter-timeline" data-dnt="true" data-theme="light" data-link-color="#b12c46" data-tweet-limit="1" data-show-replies="false" data-border-color="#010638" 
+						<a class="twitter-timeline" data-dnt="true" data-theme="dark" data-link-color="#b12c46" data-tweet-limit="1" data-show-replies="false" data-border-color="#010638" 
 						data-chrome="noheader nofooter noborders noscrollbar transparent"
 						href="https://twitter.com/AudiologyPlus?ref_src=twsrc%5Etfw">Tweets by AudiologyPlus</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
@@ -958,33 +958,13 @@
 
 		$(window).load(function() {
 
-			$('#twitter-widget-1').contents().find('.timeline-Widget')
-			.css({
-				"color": "#CCC",
-			 	"font-family": "Lato, sans-serif",
-			 	"font-size": "14px"
-			 });
-
 			$('#twitter-widget-1').contents().find('.timeline-Tweet-text')
 			.css({
-				"color": "#CCC",
-				"opacity": "0.8",
 				"font-family": "Lato,sans-serif",
 				"font-style": "normal",
 				"font-size": "14px",
 		     	"line-height": "1.42857143",
 		     	"font-weight": "normal"
-			});
-
-			$('#twitter-widget-1')
-			.contents()
-			.find('.TwitterCardsGrid, .TwitterCard')
-			.contents()
-			.find('.TwitterCard-container--clickable')
-			.hover(function() {
-				$(this).css({
-					"background": "#9f2343 !important"
-				})
 			});
 		});
 
