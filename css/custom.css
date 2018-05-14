@@ -716,25 +716,62 @@ blockquote footer {
     font-size: 18px;
 }
 
-#hospital-info {
+.hospital-container {
     display: flex;
     flex-wrap: wrap;
-    align-content: flex-end;
+    justify-content: space-around;
+    align-items: center;
 }
 
-#hospital-info .col_one_third {
-    flex: 1;
+.box {
+    text-align: center;
+    flex-basis: 25%;
 }
 
-#hospital-info .col_one_third .heading-block,
-#hospital-info .col_one_third .clinic-location-time {
+.box .clinic-img {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 35px;
+}
+
+.hospital-divider {
+    content: "";
+    display: block;
+    width: 40px;
+    border-top: 2px solid #444;
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+.box .clinic-text .heading-block {
+    margin-bottom: 30px;
+    text-align: center !important;
+}
+
+.box .clinic-text .heading-block p {
+    margin-bottom: 0;
+}
+
+.box .clinic-text .heading-block:after {
+    content: none !important;
+}
+
+.box .clinic-text .clinic-location-time,
+.box .clinic-text .heading-block {
     height: 100px;
     padding-left: 10%;
     padding-right: 10%;
+
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    justify-content: space-between;
 }
 
-#hospital-info .col_one_third .clinic-img img {
-    width: 80%;
+.box .clinic-text .clinic-location-time ul {
+    text-align: left;
+    list-style: none;
 }
 
 .locations_contact h4 {
@@ -747,24 +784,19 @@ blockquote footer {
     overflow: hidden;
 }
 
-.clinic-coming-soon {
+.coming-soon {
     position: absolute;
     top: 0;
     left: 0;
-    left: 10%;
-    /*width: 100%;
-    height: 100%;*/
-    width: 80%;
+    width: 100%;
     height: 100%;
     opacity: 1;
     z-index: 2;
     text-align: center;
-    /*background-color: rgba(0,0,0,.5);*/
-    /*background-color: rgba(164, 0, 33, 0.46);*/
     background-color: rgba(125, 1, 26, 0.6);
 }
 
-.clinic-coming-soon h3 {
+.coming-soon h3 {
     text-align: center;
     color: white;
     font-weight: 600;
@@ -780,6 +812,10 @@ blockquote footer {
 /*.payment-cards {
     text-align: center;
 }*/
+
+.privacy-policy-ul {
+    padding-left: 10%;
+}
 
 /* -------------------------------------------------- */
 @media (min-width: 2278px) {
@@ -831,6 +867,20 @@ blockquote footer {
     }
 }
 
+@media (min-width: 991px) and (max-width: 1200px) {
+    .hospital-divider {
+        display: none;
+    }
+    .box .clinic-text {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .box .clinic-text .heading-block {
+        margin-bottom: 20%;
+    }
+}
+
 @media (max-width: 991px) {
     #about-us-col-one-third,
     #about-us-col-two-third {
@@ -853,6 +903,10 @@ blockquote footer {
     .footer-widgets-wrap > .col_half:last-child {
         margin-top: 30px;
     }
+
+    /*.box {
+        flex-basis: 100%;
+    }*/
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -886,39 +940,54 @@ blockquote footer {
         height: 50%;
     }
 
-    #hospital-info .col_one_third .clinic-text {
-        flex: 0 0 50%;
-    }
-
-    #hospital-info .col_one_third .clinic-img {
-        flex: 0 0 50%;
-    }
-
-    .clinic-coming-soon {
-        height: 75%;
-    }
-
-    #hospital-info .col_one_third {
-        flex: 0 0 100%;
-        display: flex;
-    }
-
-    #hospital-info .clinic-text {
-        text-align: center !important;
-        padding-right: 20px;
-    }
-
-    #hospital-info .col_one_third .clinic-text .heading-block {
-        height: auto;
-    }
-
-    #hospital-info .clinic-text .clinic-location-time ul {
-        text-align: center !important;
-    }
-
     #page-title.facts-page-title {
         /*background-size: auto !important;*/
         background-size: contain !important;
+    }
+
+    .box {
+        display: flex;
+        flex-basis: 100%;
+        margin: 20px 0;
+    }
+
+    .box .clinic-text,
+    .box .clinic-img {
+        flex: 1;
+    }
+
+    .box .clinic-img {
+        margin: 0;
+        padding: 0 5% 5% 5%;
+    }
+
+    .box .clinic-img .coming-soon {
+        width: 314px;
+        height: 220px;
+        left: auto;
+    }
+
+    .box .clinic-text .clinic-location-time,
+    .box .clinic-text .heading-block {
+        display: initial;
+    }
+
+    .box .clinic-text .heading-block {
+        margin-bottom: 50px;
+    }
+
+    .box .clinic-text {
+        padding: 0 10px 10px 10px;
+    }
+
+    .box .clinic-text .clinic-location-time {
+        padding-left: 10%;
+        /*padding-right: 10%;*/
+    }
+
+    .box .clinic-text .clinic-location-time ul {
+        text-align: left;
+        list-style: none;
     }
 }
 
@@ -941,23 +1010,6 @@ blockquote footer {
         display: none;
     }
 
-    #hospital-info .col_one_third {
-        flex: none;
-    }
-
-    #hospital-info .col_one_third {
-        flex: none;
-    }
-
-    #hospital-info .col_one_third .clinic-text .heading-block {
-        margin-bottom: 20px;
-        height: auto;
-    }
-
-    #hospital-info .col_one_third .clinic-img {
-        margin-bottom: 45px !important;
-    }
-
     .footer-widgets-wrap > .col_half {
         flex: 0 0 100%;
     }
@@ -967,13 +1019,25 @@ blockquote footer {
     }
 
     #page-title.facts-page-title {
-        /*background-position: 18% 66px !important;*/
         background-position: 81% 66px !important;
     }
 
     #page-title.about-page-title {
         background-size: cover;
         background-position: 33% -9px;
+    }
+
+    .box {
+        flex-basis: 100%;
+        margin-bottom: 70px;
+    }
+
+    .box .clinic-text {
+        margin-bottom: 20px;
+    }
+
+    .box .clinic-text .clinic-location-time {
+        height: inherit;
     }
 }
 
