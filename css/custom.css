@@ -1058,6 +1058,7 @@ blockquote footer {
         display: flex;
         flex-wrap: wrap;
         align-content: flex-end;
+        justify-content: center;
     }
 
     .hospital-logos > div {
