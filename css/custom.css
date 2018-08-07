@@ -209,7 +209,7 @@ body {
     margin-top: 20px;
     font-size: 14px;
     color: #1534a3;
-    position: absolute;
+    /*position: absolute;*/
     bottom: 0px;
 }
 
@@ -431,6 +431,7 @@ blockquote footer {
 
 .cert {
     text-align: center;
+    /*width: 240px;*/
     width: 275px;
 }
 
@@ -904,9 +905,19 @@ blockquote footer {
         margin-top: 30px;
     }
 
+    .cert {
+    width: 240px;
+    }
+
     /*.box {
         flex-basis: 100%;
     }*/
+}
+
+@media (min-width: 768px) {
+    .locations_contact {
+        margin-bottom: 30px !important;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
