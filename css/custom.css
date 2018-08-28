@@ -227,8 +227,8 @@ body {
 
 /* Parallax - other pages */
 #page-title.page-title-parallax h1 {
-    /*text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.9);*/
-    text-shadow: none;
+    text-shadow: 2px 2px 6px rgba(88, 88, 88, 0.9);
+    /*text-shadow: none;*/
 }
 
 #page-title.page-title-parallax {
@@ -960,6 +960,20 @@ blockquote footer {
         background-size: contain !important;
         background-position: 50% 116.6px !important;
     }
+
+    .locations-page-title {
+    /*background-position: 70% 139px !important;*/
+    /*background-size: contain !important;*/
+    /*background-position: 66% -120px !important;*/
+
+    /*background-position: 70% 139px !important;
+    background-size: contain !important;*/
+
+    /*background-position: 76% -218px !important;*/
+    background-position: 76% -176px !important;
+    /*background-size: cover !important;*/
+    background-size: auto !important;
+}
 }
 
 @media (min-width: 768px) and (max-width: 1200px) {
@@ -1161,8 +1175,11 @@ blockquote footer {
 
     .locations-page-title {
     /*background-position: 70% 139px !important;*/
-    background-size: cover !important;
-    background-position: 69% -262px !important;
+    /*background-size: cover !important;
+    background-position: 69% -262px !important;*/
+
+    background-size: auto !important;
+    background-position: 73% -145px !important;
     }
 }
 
