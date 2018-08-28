@@ -309,6 +309,29 @@ body:not(.device-touch):not(.device-xs):not(.device-xxs) .mediabox-overlay a {
 .iportfolio:hover .mediabox-overlay a.left-icon,
 .iportfolio:hover .mediabox-overlay a.right-icon { margin-top: -18px; }
 
+.location-promo {
+    border: 2px solid #E5E5E5 !important;
+}
+
+.location-promo .button-dark {
+    background-color: #072080;
+}
+
+.team-title h4 {
+    color: #030b53;
+}
+
+.team-content {
+    color: #444;
+}
+
+.locations-fancy-title h2{
+    text-transform: uppercase;
+    color: #0d167b;
+    letter-spacing: 2px;
+    border-bottom: 4px solid #e1e4f5 !important;
+}
+
 
 /* 404 Page
 -----------------------------------------------------------------*/
@@ -892,6 +915,15 @@ blockquote footer {
     padding-left: 10%;
 }
 
+.locations-page-title {
+    /*background-position: 70% 139px !important;*/
+    /*background-size: contain !important;*/
+    /*background-position: 66% -120px !important;*/
+
+    background-position: 70% 139px !important;
+    background-size: contain !important;
+}
+
 /* -------------------------------------------------- */
 @media (min-width: 2278px) {
     #page-title.about-page-title {
@@ -940,6 +972,8 @@ blockquote footer {
         /*background-position: 23% 0;*/
         background-position: 31% 36px;
     }
+
+
 }
 
 @media (min-width: 991px) and (max-width: 1200px) {
@@ -1123,6 +1157,12 @@ blockquote footer {
 
     .box .clinic-text .clinic-location-time {
         height: inherit;
+    }
+
+    .locations-page-title {
+    /*background-position: 70% 139px !important;*/
+    background-size: cover !important;
+    background-position: 69% -262px !important;
     }
 }
 
