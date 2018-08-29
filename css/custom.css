@@ -924,6 +924,11 @@ blockquote footer {
     background-size: contain !important;
 }
 
+/*#twitter-widget-1 {height:500px !important;}*/
+#twitter-widget-1 .MediaCard-media {
+    height: 300px !important;
+}
+
 /* -------------------------------------------------- */
 @media (min-width: 2278px) {
     #page-title.about-page-title {

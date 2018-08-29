@@ -1071,6 +1071,9 @@
     <script type="text/javascript">
 
         $(window).load(function() {
+            $('#twitter-widget-1').css({
+                "max-height": "500px"
+            });
 
             $('#twitter-widget-1').contents().find('.timeline-Tweet-text')
             .css({
@@ -1079,6 +1082,11 @@
                 "font-size": "14px",
                 "line-height": "1.42857143",
                 "font-weight": "normal"
+            });
+
+            $('#twitter-widget-1').contents().find('.MediaCard-media')
+            .css({
+                "max-height": "300px"
             });
 
 
