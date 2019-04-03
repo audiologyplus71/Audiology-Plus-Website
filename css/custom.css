@@ -321,6 +321,10 @@ body:not(.device-touch):not(.device-xs):not(.device-xxs) .mediabox-overlay a {
     color: #030b53;
 }
 
+.team-title span {
+    color: #373e77;
+}
+
 .team-content {
     color: #444;
 }
