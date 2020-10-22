@@ -1234,6 +1234,30 @@ blockquote footer {
         background-size: auto !important;
         background-position: 73% -145px !important;
     }
+
+    #copyrights .container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #copyrights .col_half:last-child {
+        display: block;
+    }
+
+    #copyrights .col_half.col_last {
+        /* display: flex;
+        justify-content: center; */
+    }
+
+    #copyrights .col_half.col_last.tright {
+        text-align: center !important;
+    }
+
+    #copyrights .col_half.col_last.tright .fright {
+        float: none !important;
+        display: flex;
+        justify-content: center;
+    }
 }
 
 @media (min-width: 480px) and (max-width: 767px) {
