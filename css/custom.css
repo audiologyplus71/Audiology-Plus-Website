@@ -58,8 +58,8 @@ body {
 }
 
 .promo.promo-dark {
-    /*background: #fffbd5 !important;  
-    background: -webkit-linear-gradient(to right, #9c0624, #db7288) !important;  
+    /*background: #fffbd5 !important;
+    background: -webkit-linear-gradient(to right, #9c0624, #db7288) !important;
     background: linear-gradient(to right, #1a3169, #2a609c) !important;*/
 
     background: linear-gradient(to right, #0b1371, #1377ce);
@@ -978,6 +978,41 @@ blockquote footer {
     opacity: 1;
 }
 
+.testimonial {
+    max-width: 700px !important;
+}
+
+#testimonial-pattern {
+    background: linear-gradient(to right, #a4aae8, #1377ce);
+    margin-bottom: 0;
+}
+
+.testi-content p {
+    font-family: initial !important;
+}
+
+.testi-meta span {
+    font-style: italic;
+    color: white;
+}
+
+.rating-container {
+    padding-right: 0;
+}
+
+.rating-sm {
+    font-size: 20px;
+}
+
+.reviews-page-quote p {
+    font-size: 20px !important;
+    font-style: italic;
+}
+
+.reviews-page-quote footer {
+    font-size: 90% !important;
+}
+
 /* -------------------------------------------------- */
 @media (min-width: 2278px) {
     #page-title.about-page-title {
@@ -1006,6 +1041,7 @@ blockquote footer {
 }
 
 @media (min-width: 1200px) {
+
     #about-container {
         width: 1000px;
     }
@@ -1027,6 +1063,52 @@ blockquote footer {
         background-position: 76% -176px !important;
         /*background-size: cover !important;*/
         background-size: auto !important;
+    }
+}
+
+@media (max-width: 1200px) {
+    /* #header .container {
+        width: 750px !important;
+    } */
+
+    #header #logo {
+        display: block;
+        height: 100px;
+        float: none;
+        margin: 0 auto 0 !important;
+        max-width: none;
+        text-align: center;
+        border: 0 !important;
+        padding: 0 !important;
+        float: none !important;
+    }
+
+    #logo a.standard-logo {
+        display: inline-block;
+    }
+
+    #header #primary-menu-trigger {
+        pointer-events: auto;
+        top: 25px;
+        margin-top: 0;
+        left: 0;
+        opacity: 1;
+        z-index: 1;
+    }
+
+    #header #primary-menu {
+        display: block;
+        float: none;
+    }
+
+    #primary-menu>ul {
+        display: none;
+        float: none !important;
+        border: 0 !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        -webkit-transition: none;
+        transition: none;
     }
 }
 
@@ -1087,6 +1169,12 @@ blockquote footer {
         margin-top: 30px;
     }
 }
+
+/* @media (min-width: 992px) {
+    .container {
+        width: 750px !important;
+    }
+} */
 
 @media (min-width: 768px) {
     .locations_contact {
