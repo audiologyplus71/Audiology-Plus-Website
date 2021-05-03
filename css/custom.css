@@ -65,6 +65,16 @@ body {
     background: linear-gradient(to right, #0b1371, #1377ce);
 }
 
+.testimonial-dark-blue {
+    background: linear-gradient(to right, #0b1371, #1377ce);
+    color: white;
+}
+
+.testimonial-blue-2 {
+    background: linear-gradient(to right, #253db1, #2a91da);
+    color: white;
+}
+
 .promo.promo-dark>span,
 .promo.promo-dark>.container>span {
     color: white;
@@ -210,7 +220,7 @@ body {
     margin-top: 20px;
     font-size: 14px;
     color: #1534a3;
-    /*position: absolute;*/
+    position: absolute;
     bottom: 0px;
 }
 
@@ -235,6 +245,26 @@ body {
 #page-title.page-title-parallax {
     background-size: auto;
 }
+
+/*------------------------------------------------------------*/
+
+
+/* Recent News - Homepage */
+.recent-news h3 {
+    /* color: #030b53; */
+    color: #9f2243;
+    font-weight: 700 !important;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    line-height: 22.5px;
+}
+
+.recent-news p {
+    /* color: #030b53; */
+}
+
+/*------------------------------------------------------------*/
+
 
 /*------------------------------------------------------------*/
 
@@ -498,7 +528,7 @@ body:not(.device-touch):not(.device-xs):not(.device-xxs) .mediabox-overlay a {
 }
 
 .payments-info {
-    text-align: center;
+    /* text-align: center; */
 }
 
 .payment-cards {
@@ -512,13 +542,14 @@ body:not(.device-touch):not(.device-xs):not(.device-xxs) .mediabox-overlay a {
     width: 44px;
 }
 
-blockquote {
+/* blockquote {
     font-family: "Merriweather", serif;
-}
+} */
 
 blockquote p {
     font-size: 19px;
     color: #3c5898;
+    /* font-style: italic; */
 }
 
 blockquote footer {
@@ -892,7 +923,7 @@ blockquote footer {
 }
 
 .locations_contact h4 {
-    text-align: center;
+    /* text-align: center; */
     margin-bottom: 10px;
 }
 
@@ -973,10 +1004,10 @@ blockquote footer {
     border-bottom: 0;
 }
 
-.clients-grid li a,
+/* .clients-grid li a,
 .clients-grid li img {
     opacity: 1;
-}
+} */
 
 .testimonial {
     max-width: 700px !important;
@@ -988,12 +1019,17 @@ blockquote footer {
 }
 
 .testi-content p {
-    font-family: initial !important;
+    font-family: 'Lato', sans-serif;
 }
 
 .testi-meta span {
     font-style: italic;
     color: white;
+}
+
+.uneven-testimonial {
+    display: flex;
+    align-items: center;
 }
 
 .rating-container {
@@ -1011,6 +1047,15 @@ blockquote footer {
 
 .reviews-page-quote footer {
     font-size: 90% !important;
+}
+
+/* Press Page */
+.portfolio-desc {
+    background-color: white;
+}
+
+.insurance-logos li img {
+    width: 60% !important;
 }
 
 /* -------------------------------------------------- */
@@ -1083,7 +1128,7 @@ blockquote footer {
         float: none !important;
     }
 
-    #logo a.standard-logo {
+    #logo img {
         display: inline-block;
     }
 
@@ -1345,6 +1390,10 @@ blockquote footer {
         float: none !important;
         display: flex;
         justify-content: center;
+    }
+
+    .uneven-testimonial {
+        display: block;
     }
 }
 
