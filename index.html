@@ -35,7 +35,7 @@
     <meta name="fb:admins" content="@audiologyplus.co.uk">
     <meta name="og:type" content="website">
     <meta name="keywords"
-        content="audiology, hearing, hearing aids, audiologist, UK, hearing assessment, tinnitus, aftercare, clinic">
+        content="audiology, hearing, hearing aids, audiologist, UK, hearing assessment, tinnitus, aftercare, clinic, Audiology Plus, Audiology Plus LTD">
 
     <!-- Favicon
     ============================================= -->
@@ -51,11 +51,14 @@
     <link rel="stylesheet" href="css/swiper.css" type="text/css" />
     <link rel="stylesheet" href="css/dark.css" type="text/css" />
     <link rel="stylesheet" href="css/font-icons.css" type="text/css" />
-    <link rel="stylesheet" href="demos/medical/css/medical-icons.css" type="text/css" />
+    <link rel="stylesheet" href="css/medical-icons.css" type="text/css" />
     <link rel="stylesheet" href="css/animate.css" type="text/css" />
     <link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
     <link rel="stylesheet" href="css/responsive.css" type="text/css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Star Rating CSS -->
+    <link rel="stylesheet" href="css/components/bs-rating.css" type="text/css" />
 
     <!-- Custom Icons
     ============================================= -->
@@ -152,9 +155,10 @@
                     <!-- Logo
                     ============================================= -->
                     <div id="logo">
-                        <a href="index.html" class="standard-logo"><img src="images/logo-2x.png"
+                        <a href="index.html" class="standard-logo"><img src="images/logo/logo-2x.png"
                                 alt="Audiology Plus"></a>
-                        <a href="index.html" class="retina-logo"><img src="images/logo-2x.png" alt="Audiology Plus"></a>
+                        <a href="index.html" class="retina-logo"><img src="images/logo/logo-2x.png"
+                                alt="Audiology Plus"></a>
                     </div><!-- #logo end -->
 
                     <!-- Primary Navigation
@@ -163,29 +167,53 @@
 
                         <ul class="one-page-menu" data-easing="easeInOutExpo" data-speed="1250">
 
-                            <li class="current"><a href="#" data-href="#header">
+                            <li class="current">
+                                <a href="#" data-href="#header">
                                     <div>Home</div>
-                                </a></li>
+                                </a>
+                            </li>
 
-                            <li><a href="#" data-href="#section-services">
+                            <li>
+                                <a href="#" data-href="#section-services">
                                     <div>Services</div>
-                                </a></li>
+                                </a>
+                            </li>
 
-                            <li><a href="#" data-href="#section-about-us">
+                            <li>
+                                <a href="#" data-href="#section-about-us">
                                     <div>About Us</div>
-                                </a></li>
+                                </a>
+                            </li>
 
-                            <li><a href="#" data-href="#section-facts">
+                            <li>
+                                <a href="#" data-href="#section-facts">
                                     <div>Facts</div>
-                                </a></li>
+                                </a>
+                            </li>
 
-                            <li><a href="#" data-href="#section-locations">
+                            <li>
+                                <a href="#" data-href="#section-press">
+                                    <div>Press</div>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" data-href="#section-reviews">
+                                    <div>Reviews</div>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" data-href="#section-locations">
                                     <div>Locations</div>
-                                </a></li>
+                                </a>
+                            </li>
 
-                            <li><a href="#" data-href="#section-contact">
+                            <li>
+                                <a href="#" data-href="#section-contact">
                                     <div>Contact</div>
-                                </a></li>
+                                </a>
+                            </li>
                         </ul>
 
                     </nav><!-- #primary-menu end -->
@@ -205,7 +233,25 @@
 
                 <div class="swiper-wrapper">
                     <div class="swiper-slide"
-                        style="background-image: url('demos/medical/images/slider/holdinghands.jpg');">
+                        style="background-image: url('images/slider/audiologist_with_male_patient.jpeg');">
+                        <div class="light-overlay">
+                            <div class="container clearfix">
+                                <div class="">
+                                    <div class="slider-caption slider-caption-center">
+                                        <h2 data-caption-animate="flipInX">An <span>award winning</span>
+                                            private hearing clinic<span>.</span></h2>
+                                        <p data-caption-animate="flipInX" data-caption-delay="500">We are proud to
+                                            announce that our efforts to provide the best audiological care possible
+                                            have been recognized by multiple awards.</p>
+                                        <a href="about.html" class="button button-rounded font-primary"
+                                            data-caption-animate="flipInX" data-caption-delay="500">ABOUT US</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide" style="background-image: url('images/slider/holding-hands.jpg');">
                         <div class="light-overlay">
                             <div class="container clearfix">
                                 <div class="">
@@ -224,8 +270,7 @@
                         </div>
                     </div>
 
-                    <div class="swiper-slide"
-                        style="background-image: url('demos/medical/images/slider/mountain.jpg');">
+                    <div class="swiper-slide" style="background-image: url('images/slider/girl_otoscope.jpeg');">
                         <div class="light-overlay">
                             <div class="container clearfix">
                                 <div class="slider-caption slider-caption-center">
@@ -256,43 +301,7 @@
 
             <div class="content-wrap nobottompadding" id="index-page-first-content-wrap">
 
-                <div class="section notopmargin">
-                    <div class="container clearfix">
-                        <div class="row center awards">
-
-                            <div class="col-lg-7">
-                                <div class="heading-block">
-                                    <h2>We Are An <span>Award Winning</span> Private Hearing Clinic</h2>
-                                </div>
-                                <p class="lead">We are pleased to announce that Audiology Plus was awarded the Best
-                                    Private Hearing
-                                    Clinic of 2020 by SME.</p>
-
-                                <blockquote>
-                                    <p>
-                                        Audiology Plus Ltd has demonstrated excellence, commitment, dedication even in
-                                        the
-                                        face
-                                        of uncertainty. After overcoming such disruption, we believe more than ever,
-                                        that
-                                        you
-                                        should be recognised!
-                                    </p>
-                                    <footer class="blockquote-footer">SME News, 2020</footer>
-                                </blockquote>
-                            </div>
-
-                            <div class="col-lg-5 topmargin-sm">
-                                <div class="position-relative overflow-hidden">
-                                    <img src="images/awards/certificate.png" data-animate="fadeInRight" data-delay="100"
-                                        alt="SEA 2020 Awards">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="container clearfix bottommargin-lg">
+                <div class="container clearfix topmargin-lg bottommargin-lg">
 
                     <div id="section-services" class="page-section heading-block nobottomborder center">
                         <h2>Our Services</h2>
@@ -336,7 +345,7 @@
                                 <a href="">
                                     <i class="icons8-listening"></i>
                                 </a>
-                                <h3>Tinnitus Treatment</h3>
+                                <h3>Tinnitus Management</h3>
                                 <p>Tinnitus can affect people in different ways. Most are not troubled by it as they
                                     have learned to live with it, but some may find it difficult to cope with. Audiology
                                     Plus provides Tinnitus assessment, counselling and management, offering noise
@@ -397,7 +406,7 @@
                 </div>
 
                 <div class="dark section notopmargin nobottommargin"
-                    style="background-image: url('images/parallax/man-beach.jpg'); padding: 100px 0px; background-position: 50% -85.3828px;">
+                    style="background-image: url('images/misc/man-beach.jpg'); padding: 100px 0px; background-position: 50% -85.3828px;">
                     <div class="center allmargin-sm nobottomborder nobottommargin">
                         <div class="heading-block">
                             <h2>Hearing impaired people are often subjected to prejudice and misconception.</h2>
@@ -408,869 +417,1079 @@
                     </div>
                 </div>
 
-                <div class="section notopmargin">
-                    <div class="container clearfix">
+                <div id="section-about-us" class="container clearfix topmargin-lg bottommargin-sm">
+                    <div class="col_half center xtopmargin-lg">
+                        <img data-animate="fadeInLeft" src="images/misc/audiology_team_small.jpg">
+                    </div>
 
-                        <div id="section-about-us" class="page-section">
-
-                            <div id="about-us-col-one-third" class="col_one_third topmargin-lg bottommargin-sm center">
-                                <img data-animate="fadeInLeft" src="images/about/piotr-bw-small.jpg"
-                                    alt="Piotr Swiatek">
+                    <div class="col_half topmargin-sm bottommargin-sm col_last center">
+                        <div>
+                            <div class="heading-block center">
+                                <h3>About the Audiology Plus team</h3>
+                                <span class="color">Established just three years ago, Audiology Plus is
+                                    the
+                                    award-winning Private
+                                    Hearing Clinic that truly understands what it means to experience the joy of
+                                    being
+                                    able
+                                    to hear.</span>
                             </div>
 
-                            <div id="about-us-col-two-third" class="col_two_third bottommargin col_last center">
-
-                                <div class="heading-block topmargin-sm center">
-                                    <h3>Meet Piotr Swiatek</h3>
-                                    <span>Piotr has a comprehensive knowledge in clinical physiology and audiology and
-                                        hearing aids technology.</span>
-                                </div>
-
-                                <p>Piotr has been working in the audiology field for almost 12 years. He started as an
-                                    Assistant Audiologist in Surrey Primary Care Trust NHS. He completed his training in
-                                    Clinical Physiology &amp; Audiology at Middlesex University in London in 2009,
-                                    followed by a FdSc in Hearing Aid Audiology. He continued his studies and
-                                    successfully achieved BSc (Hons) in Hearing Science from Anglia Ruskin University in
-                                    Cambridge. This helped him to register as a Clinical Audiologist with RCCP
-                                    (Registration Council for Clinical Physiologists), who governs the NHS Audiologists.
+                            <div>
+                                <p id="about-page-paragraph">Based in Sussex and Surrey, under the leadership of Mr.
+                                    Piotr Swiatek
+                                    (Senior
+                                    Clinical Audiologist and Hearing Aid Consultant), the company works hard to
+                                    ensure
+                                    that every one of its clients with hearing impairment has the chance to live
+                                    life without
+                                    restrictions.
+                                    Our clinic is one of exquisite care and exceptional understanding.
+                                    The joy of
+                                    hearing is one that everybody should be able to experience, and Audiology Plus
+                                    always aim
+                                    to go above and beyond in ensuring that its clients get the care they deserve.
                                 </p>
-
                                 <a href="about.html"
+                                    class="button button-border button-dark button-rounded button-large noleftmargin topmargin-sm">Read
+                                    more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container clearfix topmargin">
+                <ul class="clients-grid grid-6 center">
+                    <li class="grid-item"><a
+                            href="https://www.hcpc-uk.org/check-the-register/professional-registration-detail/?query=HAD01823&profession=HAD&backtosearchurl=https://www.hcpc-uk.org/check-the-register/register-results/&backtosearchquery=Swiatek"
+                            target="_blank"><img src="images/affiliations/HCPC-Logo-330x200.jpg" alt="Clients"></a>
+                    </li>
+                    <li class="grid-item">
+                        <a href="https://www.clearwax.co.uk/ear-wax-removal-clinic/1514/CRAWLEY-West%20Sussex/Mr-Piotr-Swiatek"
+                            target="_blank">
+                            <iframe frameborder="0" scrolling="no" width="80%" height="100%"
+                                src="//www.clearwax.co.uk/badge/?id=1514" id="ClearWax_Badge" style="display:
+                                    none"></iframe>
+                            <img src="images/affiliations/clearwax-badge-330x139.png" alt="Clients">
+                        </a>
+                    </li>
+                    <li class="grid-item"><a href="https://www.rccp.co.uk/" target="_blank"><img
+                                src="images/affiliations/RCCP-Logo-330x200.jpg" alt="Clients"></a></li>
+                    <li class="grid-item"><a
+                            href="https://www.ashteadhospital.co.uk/specialists/audiology/mr-piotr-swiatek"
+                            target="_blank"><img src="images/affiliations/Ramsay-Logo-330x200.jpg" alt="Clients"></a>
+                    </li>
+                    <li class="grid-item"><a
+                            href="https://www.spirehealthcare.com/consultant-profiles/mr-piotr-swiatek/"
+                            target="_blank"><img src="images/affiliations/spire-330x200.jpg" alt="Clients"></a>
+                    </li>
+                    <li class="grid-item"><a href="https://www.fountaintherapies.co.uk/lp-hearing-centre/"
+                            target="_blank"><img src="images/affiliations/fountain_therapies_330x200.jpg"
+                                alt="Clients"></a>
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="section notopmargin nobottommargin">
+                <div class="container clearfix">
+
+                    <!-- Portfolio Single Content
+                        ============================================= -->
+                    <div class="col_one_third portfolio-single-content nobottommargin">
+
+                        <!-- Portfolio Single - Description
+                            ============================================= -->
+                        <div class="fancy-title title-bottom-border">
+                            <!-- <h2>Project Info:</h2> -->
+                            <blockquote>
+                                <p>When delivering patient care, it is imperative that one understands the
+                                    importance of providing the best care possible for all patients. Putting the
+                                    needs of patients first, is the key to delivering efficient patient care.
+                                    <br><br>Often it is the small things that makes the difference between a good
+                                    and a bad experience. Audiology Plus aim is to provide a high quality of
+                                    clinical care to our patients.</p>
+
+                                <footer class="blockquote-footer">Piotr Swiatek, Audiology Plus LTD.</footer>
+                            </blockquote>
+                        </div>
+
+                        <!-- Portfolio Single - Description End -->
+
+                    </div><!-- .portfolio-single-content end -->
+
+                    <!-- Portfolio Single Gallery
+                        ============================================= -->
+                    <div class="col_two_third portfolio-single-image nobottommargin col_last">
+                        <img xdata-animate="fadeInLeft" src="images/misc/office-collage.png"
+                            alt="Audiology Plus office">
+                    </div><!-- .portfolio-single-image end -->
+                </div>
+            </div>
+
+            <div class="container clearfix topmargin">
+                <div class="heading-block center">
+                    <h3>Insurances We Accept</h3>
+                </div>
+                <ul class="clients-grid grid-5 center insurance-logos">
+                    <li class="grid-item">
+                        <img src="images/insurance/aviva_400x400.png" alt="Insurance We Accept">
+                    </li>
+                    <li class="grid-item">
+                        <img src="images/insurance/bupa_400x400.png" alt="Insurance We Accept">
+                    </li>
+                    <li class="grid-item">
+                        <img src="images/insurance/cigna_400x400.png" alt="Insurance We Accept">
+                    </li>
+                    <li class="grid-item">
+                        <img src="images/insurance/PPP_400x400.png" alt="Insurance We Accept">
+                    </li>
+                    <li class="grid-item">
+                        <img src="images/insurance/vitality_400x400.png" alt="Insurance We Accept">
+                    </li>
+                </ul>
+            </div>
+
+            <div class="section dark notopmargin" id="custom-pattern">
+                <div class="container clearfix bottommargin-sm">
+
+                    <div id="side-navigation" class="tabs customjs">
+
+                        <div id="section-facts" class="page-section heading-block center nobottomborder">
+                            <h2>Did you know?</h2>
+                            <!-- <span>About Hearing Loss</span> -->
+                        </div>
+
+                        <div class="page-section col_one_third nobottommargin">
+
+                            <ul class="sidenav">
+                                <li class="ui-tabs-active"><a href="#snav-content1"><i
+                                            class="icons8-hearing"></i>Conductive
+                                        Hearing Loss<i class="icon-chevron-right"></i></a></li>
+
+                                <li><a href="#snav-content2"><i class="icons8-hearing"></i>Sensorineural Hearing
+                                        Loss<i class="icon-chevron-right"></i></a></li>
+
+                                <li><a href="#snav-content3"><i class="icons8-hearing"></i></i>Tinnitus<i
+                                            class="icon-chevron-right"></i></a></li>
+
+                                <li><a href="#snav-content4"><i class="icons8-hearing"></i>How To Help A Hearing
+                                        Impaired Person Understand You<i class="icon-chevron-right"></i></a></li>
+
+                                <li><a href="#snav-content5"><i class="icons8-hearing"></i>How to Understand
+                                        Conversation Better if You Have a Hearing Impairment<i
+                                            class="icon-chevron-right"></i></a></li>
+
+                                <li><a href="#snav-content6"><i class="icons8-hearing"></i>Lip Reading<i
+                                            class="icon-chevron-right"></i></a></li>
+                            </ul>
+
+
+
+                        </div>
+
+                        <div class="col_two_third col_last nobottommargin">
+
+                            <div id="snav-content1">
+                                <img class="alignright img-responsive" src="images/facts/hearing-small.jpg" alt="">
+
+                                <h3>Conductive Hearing Loss</h3>
+
+
+                                Conductive hearing loss means that sound isn't conducted adequately through your
+                                outer ear canal to the eardrum and the tiny bones, or ossicles, of your middle ear.
+                                Conductive hearing loss generally involves a reduction in sound level and results in
+                                the inability to hear faint sounds. However, you can still hear people speaking to
+                                you, but their speech may sound muffled, weak or far away.
+                                <br>
+                                <a href="facts.html#main-facts-tabs" data-scrollto="facts.html#main-facts-tabs"
+                                    class="button button-border button-dark button-rounded button-large noleftmargin topmargin-sm">Read
+                                    more</a>
+                            </div>
+
+                            <div id="snav-content2">
+                                <img class="alignleft img-responsive" src="images/facts/ear-diagram.jpg" alt=""
+                                    width="300">
+
+                                <h3>Sensorineural Hearing Loss</h3>
+
+                                Sensorineural hearing loss is due to damage to the pathway that sends impulses taken
+                                from the hair cells of the inner ear to the auditory nerve and the brain.
+
+                                While much of sensorineural hearing loss is age-related, there are other factors
+                                that may cause it. Many people with sensorineural hearing loss report that they can
+                                hear, but they cannot understand speech.
+
+                                <br>
+                                <a href="facts.html#main-facts-tabs" data-scrollto="facts.html#main-facts-tabs"
                                     class="button button-border button-dark button-rounded button-large noleftmargin topmargin-sm">Read
                                     more</a>
 
                             </div>
-                        </div>
 
-                    </div>
-                </div>
+                            <div id="snav-content3">
+                                <img class="alignleft img-responsive" src="images/facts/tinnitus.jpg" alt="">
 
-                <div class="container clearfix topmargin">
+                                <h3>Tinnitus</h3>
+                                The word "tinnitus" comes from the Latin word for "ringing" and is the awareness of
+                                sound in the absence of any parallel external sound. This noise may be heard in one
+                                ear, in both ears or in the middle of the head. Tinnitus is more common in people
+                                with hearing loss; however you can have normal hearing and still have tinnitus.
 
-                    <ul class="clients-grid grid-md-5 center">
-                        <li class="grid-item"><a
-                                href="https://www.hcpc-uk.org/check-the-register/professional-registration-detail/?query=HAD01823&profession=HAD&backtosearchurl=https://www.hcpc-uk.org/check-the-register/register-results/&backtosearchquery=Swiatek"
-                                target="_blank"><img src="images/audiology/cert/HCPC-Logo-330x200.jpg"
-                                    alt="Clients"></a></li>
-                        <li class="grid-item">
-                            <a href="https://www.clearwax.co.uk/ear-wax-removal-clinic/1514/CRAWLEY-West%20Sussex/Mr-Piotr-Swiatek"
-                                target="_blank">
-                                <iframe frameborder="0" scrolling="no" width="80%" height="100%"
-                                    src="//www.clearwax.co.uk/badge/?id=1514" id="ClearWax_Badge" style="display:
-                                    none"></iframe>
-                                <img src="images/audiology/cert/clearwax-badge-330x139.png" alt="Clients">
-                            </a>
-                        </li>
-                        <li class="grid-item"><a href="https://www.rccp.co.uk/" target="_blank"><img
-                                    src="images/audiology/cert/RCCP-Logo-330x200.jpg" alt="Clients"></a></li>
-                        <li class="grid-item"><a
-                                href="https://www.ashteadhospital.co.uk/specialists/audiology/mr-piotr-swiatek"
-                                target="_blank"><img src="images/audiology/cert/Ramsay-Logo-330x200.jpg"
-                                    alt="Clients"></a></li>
-                        <li class="grid-item"><a
-                                href="https://www.spirehealthcare.com/consultant-profiles/mr-piotr-swiatek/"
-                                target="_blank"><img src="images/audiology/cert/spire-330x200.jpg" alt="Clients"></a>
-                        </li>
-                    </ul>
-
-                </div>
-
-                <div class="section notopmargin nobottommargin">
-                    <div class="container clearfix">
-
-                        <!-- Portfolio Single Content
-                        ============================================= -->
-                        <div class="col_one_third portfolio-single-content nobottommargin">
-
-                            <!-- Portfolio Single - Description
-                            ============================================= -->
-                            <div class="fancy-title title-bottom-border">
-                                <!-- <h2>Project Info:</h2> -->
-                                <blockquote>
-                                    <p>When delivering patient care, it is imperative that one understands the
-                                        importance of providing the best care possible for all patients. Putting the
-                                        needs of patients first, is the key to delivering efficient patient care.
-                                        <br><br>Often it is the small things that makes the difference between a good
-                                        and a bad experience. Audiology Plus aim is to provide a high quality of
-                                        clinical care to our patients.</p>
-
-                                    <footer class="blockquote-footer">Piotr Swiatek, Audiology Plus LTD.</footer>
-                                </blockquote>
-                            </div>
-
-                            <!-- Portfolio Single - Description End -->
-
-                        </div><!-- .portfolio-single-content end -->
-
-                        <!-- Portfolio Single Gallery
-                        ============================================= -->
-                        <div class="col_two_third portfolio-single-image nobottommargin col_last">
-                            <div class="fslider" data-arrows="true" data-animation="slide">
-                                <div class="flexslider">
-                                    <div class="slider-wrap">
-                                        <div class="slide"><a href="#"><img src="images/audiology/office-1.jpg"
-                                                    alt=""></a></div>
-                                        <div class="slide"><a href="#"><img src="images/audiology/office-2.jpg"
-                                                    alt=""></a></div>
-                                        <div class="slide"><a href="#"><img src="images/audiology/office-3.jpg"
-                                                    alt=""></a></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div><!-- .portfolio-single-image end -->
-                    </div>
-                </div>
-
-                <div class="section dark notopmargin" id="custom-pattern">
-                    <div class="container clearfix bottommargin-sm">
-
-                        <div id="side-navigation" class="tabs customjs">
-
-                            <div id="section-facts" class="page-section heading-block center nobottomborder">
-                                <h2>Did you know?</h2>
-                                <!-- <span>About Hearing Loss</span> -->
-                            </div>
-
-                            <div class="page-section col_one_third nobottommargin">
-
-                                <ul class="sidenav">
-                                    <li class="ui-tabs-active"><a href="#snav-content1"><i
-                                                class="icons8-hearing"></i>Conductive Hearing Loss<i
-                                                class="icon-chevron-right"></i></a></li>
-
-                                    <li><a href="#snav-content2"><i class="icons8-hearing"></i>Sensorineural Hearing
-                                            Loss<i class="icon-chevron-right"></i></a></li>
-
-                                    <li><a href="#snav-content3"><i class="icons8-hearing"></i></i>Tinnitus<i
-                                                class="icon-chevron-right"></i></a></li>
-
-                                    <li><a href="#snav-content4"><i class="icons8-hearing"></i>How To Help A Hearing
-                                            Impaired Person Understand You<i class="icon-chevron-right"></i></a></li>
-
-                                    <li><a href="#snav-content5"><i class="icons8-hearing"></i>How to Understand
-                                            Conversation Better if You Have a Hearing Impairment<i
-                                                class="icon-chevron-right"></i></a></li>
-
-                                    <li><a href="#snav-content6"><i class="icons8-hearing"></i>Lip Reading<i
-                                                class="icon-chevron-right"></i></a></li>
-                                </ul>
-
+                                <br>
+                                <a href="facts.html#main-facts-tabs" data-scrollto="facts.html#main-facts-tabs"
+                                    class="button button-border button-dark button-rounded button-large noleftmargin topmargin-sm">Read
+                                    more</a>
 
 
                             </div>
 
-                            <div class="col_two_third col_last nobottommargin">
+                            <div id="snav-content4">
+                                <img class="alignright img-responsive" src="images/facts/helping-impaired.jpg" alt=""
+                                    width="350">
 
-                                <div id="snav-content1">
-                                    <img class="alignright img-responsive" src="images/landing/hearing-small.jpg"
-                                        alt="">
-
-                                    <h3>Conductive Hearing Loss</h3>
-
-
-                                    Conductive hearing loss means that sound isn't conducted adequately through your
-                                    outer ear canal to the eardrum and the tiny bones, or ossicles, of your middle ear.
-                                    Conductive hearing loss generally involves a reduction in sound level and results in
-                                    the inability to hear faint sounds. However, you can still hear people speaking to
-                                    you, but their speech may sound muffled, weak or far away.
-                                    <br>
-                                    <a href="facts.html#main-facts-tabs" data-scrollto="facts.html#main-facts-tabs"
-                                        class="button button-border button-dark button-rounded button-large noleftmargin topmargin-sm">Read
-                                        more</a>
-                                </div>
-
-                                <div id="snav-content2">
-                                    <img class="alignleft img-responsive" src="images/landing/ear-diagram.jpg" alt=""
-                                        width="300">
-
-                                    <h3>Sensorineural Hearing Loss</h3>
-
-                                    Sensorineural hearing loss is due to damage to the pathway that sends impulses taken
-                                    from the hair cells of the inner ear to the auditory nerve and the brain.
-
-                                    While much of sensorineural hearing loss is age-related, there are other factors
-                                    that may cause it. Many people with sensorineural hearing loss report that they can
-                                    hear, but they cannot understand speech.
-
-                                    <br>
-                                    <a href="facts.html#main-facts-tabs" data-scrollto="facts.html#main-facts-tabs"
-                                        class="button button-border button-dark button-rounded button-large noleftmargin topmargin-sm">Read
-                                        more</a>
-
-                                </div>
-
-                                <div id="snav-content3">
-                                    <img class="alignleft img-responsive" src="images/landing/tinnitus.jpg" alt="">
-
-                                    <h3>Tinnitus</h3>
-                                    The word "tinnitus" comes from the Latin word for "ringing" and is the awareness of
-                                    sound in the absence of any parallel external sound. This noise may be heard in one
-                                    ear, in both ears or in the middle of the head. Tinnitus is more common in people
-                                    with hearing loss; however you can have normal hearing and still have tinnitus.
-
-                                    <br>
-                                    <a href="facts.html#main-facts-tabs" data-scrollto="facts.html#main-facts-tabs"
-                                        class="button button-border button-dark button-rounded button-large noleftmargin topmargin-sm">Read
-                                        more</a>
+                                <h3>How To Help A Hearing Impaired Person Understand You</h3>
+                                When someone speaks, clues are gained not only from what is heard but also from what
+                                is seen. These clues complement and supplement each other, helping the hearing
+                                impaired person to piece together the conversation.
 
 
-                                </div>
-
-                                <div id="snav-content4">
-                                    <img class="alignright img-responsive" src="images/landing/helping-impaired.jpg"
-                                        alt="" width="350">
-
-                                    <h3>How To Help A Hearing Impaired Person Understand You</h3>
-                                    When someone speaks, clues are gained not only from what is heard but also from what
-                                    is seen. These clues complement and supplement each other, helping the hearing
-                                    impaired person to piece together the conversation.
-
-
-                                    <br>
-                                    <a href="facts.html#main-facts-tabs" data-scrollto="facts.html#main-facts-tabs"
-                                        class="button button-border button-dark button-rounded button-large noleftmargin topmargin-sm">Read
-                                        more</a>
-
-                                </div>
-
-                                <div id="snav-content5">
-                                    <img class="alignright img-responsive" src="images/landing/conversation-smaller.jpg"
-                                        alt="">
-
-                                    <h3>How to Understand Conversation Better if You Have a Hearing Impairment</h3>
-                                    When someone speaks, clues are gained from what we hear and what we see. You may
-                                    be able to create a situation so that as many clues as possible are available.
-
-                                    <br>
-                                    <a href="facts.html#main-facts-tabs" data-scrollto="facts.html#main-facts-tabs"
-                                        class="button button-border button-dark button-rounded button-large noleftmargin topmargin-sm">Read
-                                        more</a>
-
-                                </div>
-
-                                <div id="snav-content6">
-                                    <img class="alignleft img-responsive" src="images/landing/lipreading.jpg" alt="">
-
-                                    <h3>Lip Reading</h3>
-                                    Lipreading is the art of observing and interpreting the movement of lips, tongue and
-                                    facial expression when helping to convey meaning. Most of the elements of speech are
-                                    visible, although not all of the elements can be seen.
-
-                                    <br>
-                                    <a href="facts.html#main-facts-tabs" data-scrollto="facts.html#main-facts-tabs"
-                                        class="button button-border button-dark button-rounded button-large noleftmargin topmargin-sm">Read
-                                        more</a>
-
-                                </div>
+                                <br>
+                                <a href="facts.html#main-facts-tabs" data-scrollto="facts.html#main-facts-tabs"
+                                    class="button button-border button-dark button-rounded button-large noleftmargin topmargin-sm">Read
+                                    more</a>
 
                             </div>
-                        </div>
 
-                    </div>
-                </div>
+                            <div id="snav-content5">
+                                <img class="alignright img-responsive" src="images/facts/conversation-small.jpg" alt="">
 
-                <section id="slider" class="section notopmargin nobottommargin boxed-slider">
-                    <div class="container clearfix">
-                        <div class="heading-block center nobottomborder">
-                            <h2>Hearing Aids</h2>
-                            <span>We are proud to offer hearing aids from top brands</span>
-                        </div>
+                                <h3>How to Understand Conversation Better if You Have a Hearing Impairment</h3>
+                                When someone speaks, clues are gained from what we hear and what we see. You may
+                                be able to create a situation so that as many clues as possible are available.
 
-                        <div class="col_two_third" id="hearing-aids-slider">
+                                <br>
+                                <a href="facts.html#main-facts-tabs" data-scrollto="facts.html#main-facts-tabs"
+                                    class="button button-border button-dark button-rounded button-large noleftmargin topmargin-sm">Read
+                                    more</a>
 
-                            <div class="fslider" data-thumbs="true" data-arrows="false" data-smooth-height="true"
-                                data-animation="slide" data-easing="easeInQuad">
-
-                                <div class="flexslider">
-                                    <div class="slider-wrap">
-
-                                        <div class="slide" data-thumb="images/oticon/widex-hearing-aids-1-1100x663.png">
-                                            <a href="#">
-                                                <img src="images/oticon/widex-hearing-aids-1-1100x663.png"
-                                                    alt="Hearing Aid">
-                                            </a>
-                                        </div>
-
-                                        <div class="slide"
-                                            data-thumb="images/oticon/widex-moment-recharge-1100x663.png">
-                                            <a href="#">
-                                                <img src="images/oticon/widex-moment-recharge-1100x663.png"
-                                                    alt="Hearing Aid">
-                                            </a>
-                                        </div>
-
-                                        <div class="slide" data-thumb="images/oticon/hearing-aid-hand-1100x663.png">
-                                            <a href="#">
-                                                <img src="images/oticon/hearing-aid-hand-1100x663.png"
-                                                    alt="Hearing Aid">
-                                            </a>
-                                        </div>
-
-                                        <div class="slide"
-                                            data-thumb="images/oticon/WIDEX-MOMENT-discreet-hearing-aids-1100x663.jpg">
-                                            <a href="#">
-                                                <img src="images/oticon/WIDEX-MOMENT-discreet-hearing-aids-1100x663.jpg"
-                                                    alt="Hearing Aid">
-                                            </a>
-                                        </div>
-
-                                        <div class="slide" data-thumb="images/oticon/Ria2-family.jpg">
-                                            <a href="#">
-                                                <img src="images/oticon/Ria2-family.jpg" alt="Hearing Aid">
-                                            </a>
-                                        </div>
-
-                                        <div class="slide" data-thumb="images/oticon/Ria2_designRITE_and_IIC.jpg">
-                                            <a href="#">
-                                                <img src="images/oticon/Ria2_designRITE_and_IIC.jpg" alt="Hearing Aid">
-                                            </a>
-                                        </div>
-
-                                        <div class="slide" data-thumb="images/oticon/Alta2_miniRITE_DiamondBlack.jpg">
-                                            <a href="#">
-                                                <img src="images/oticon/Alta2_miniRITE_DiamondBlack.jpg"
-                                                    alt="Hearing Aid">
-                                            </a>
-                                        </div>
-
-                                        <div class="slide" data-thumb="images/oticon/Alta2_family_withStreamer2.jpg">
-                                            <a href="#">
-                                                <img src="images/oticon/Alta2_family_withStreamer2.jpg"
-                                                    alt="Hearing Aid">
-                                            </a>
-                                        </div>
-
-                                        <div class="slide" data-thumb="images/oticon/Alta2_designRITE_IIC_CIC.jpg">
-                                            <a href="#">
-                                                <img src="images/oticon/Alta2_designRITE_IIC_CIC.jpg" alt="Hearing Aid">
-                                            </a>
-                                        </div>
-
-                                        <div class="slide" data-thumb="images/oticon/Alta2_CoolBlue.jpg">
-                                            <a href="#">
-                                                <img src="images/oticon/Alta2_CoolBlue.jpg" alt="Hearing Aid">
-                                            </a>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col_one_third col_last" id="hearing-aids-caption-img">
-
-                            <div class="hearing-aids-caption-img-container">
-                                <div class="title-block" style="border-left: none;">
-                                    <p>
-
-                                        Effective communication requires good hearing. Even a fairly mild hearing loss
-                                        may cause communication difficulty. Hearing aids can make communication easy,
-                                        however correct fitting of hearing aids is not the final stage. Audiology Plus
-                                        not only provides hearing aids from leading hearing aid manufacturers, but also
-                                        provides advice, support, counselling and professional treatment. Our aim is to
-                                        live life without restrictions.
-                                    </p>
-                                </div>
-                                <img data-animate="fadeInRight" src="images/oticon/oticon-alta-pro-2-range.jpg"
-                                    alt="Oticon Hearing Aid">
                             </div>
 
-                        </div>
-                    </div>
-                </section>
+                            <div id="snav-content6">
+                                <img class="alignleft img-responsive" src="images/facts/lipreading.jpg" alt="">
 
-                <div class="container clearfix topmargin-lg bottommargin-lg">
+                                <h3>Lip Reading</h3>
+                                Lipreading is the art of observing and interpreting the movement of lips, tongue and
+                                facial expression when helping to convey meaning. Most of the elements of speech are
+                                visible, although not all of the elements can be seen.
 
-                    <div id="section-locations"
-                        class="page-section heading-block center nobottomborder bottommargin-sm">
-                        <h2>Locations</h2>
-                        <span>
-                            Find a location near you to better your hearing today!
-                        </span>
+                                <br>
+                                <a href="facts.html#main-facts-tabs" data-scrollto="facts.html#main-facts-tabs"
+                                    class="button button-border button-dark button-rounded button-large noleftmargin topmargin-sm">Read
+                                    more</a>
 
-                    </div>
-
-                    <div class="divider divider-short divider-rounded divider-center">
-                        <i class="icon-map-marker"></i>
-                    </div>
-
-                    <div class="col_full col_last">
-                        <div id="google-map" class="gmap" style="height: 410px;"></div>
-                    </div>
-
-                    <div class="promo promo-border bottommargin location-promo" style="text-align: center;">
-                        <h3>We currently hold <span>4</span> clinics in the <span>Surrey</span> and <span>Sussex</span>
-                            area</h3>
-                        <span>Be sure to check back for more locations as we continue to expand!</span>
-                        <a href="locations.html" class="button button-dark button-xlarge button-rounded">All
-                            Locations</a>
-                    </div>
-
-
-
-                    <div id="oc-team-list" class="owl-carousel team-carousel carousel-widget" data-margin="30"
-                        data-nav="true" data-items-sm="1" data-items-lg="2">
-
-                        <div class="oc-item">
-                            <div class="team team-list clearfix">
-                                <div class="team-image">
-                                    <a href="https://www.ashteadhospital.co.uk/specialist/audiology/mr-piotr-swiatek"
-                                        target="_blank">
-                                        <img src="images/audiology/ashtead-hospital.jpg" alt="Ashtead Hospital">
-                                    </a>
-                                </div>
-                                <div class="team-desc">
-                                    <div class="team-title">
-                                        <a href="https://www.ashteadhospital.co.uk/specialist/audiology/mr-piotr-swiatek"
-                                            target="_blank">
-                                            <h4>Ashtead Hospital</h4>
-                                        </a>
-                                    </div>
-                                    <div class="clinic-location-time team-content">
-                                        <ul class="iconlist" style="margin-bottom: 10px;">
-                                            <li>
-                                                <i class="icon-map-marker color"></i>
-                                                The Warren,
-                                                Ashtead,
-                                                Surrey,
-                                                KT21 2SB
-                                            </li>
-                                        </ul>
-                                        <ul class="iconlist" style="margin-bottom: 10px;">
-                                            <li>
-                                                <i class="icon-phone3 color"></i>
-                                                01372 221400
-                                            </li>
-                                        </ul>
-                                        <ul class="iconlist">
-                                            <li>
-                                                <i class="icon-time color"></i>
-                                                <strong><i>By Appointment Only</i></strong>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
                             </div>
-                        </div>
-                        <div class="oc-item">
-                            <div class="team team-list">
-                                <div class="team-image">
-                                    <a href="https://www.spirehealthcare.com/consultant-profiles/mr-piotr-swiatek/"
-                                        target="_blank">
-                                        <img src="images/audiology/spire-hospital-2.jpg"
-                                            alt="Spire St Anthony's Hospital">
-                                    </a>
-                                </div>
-                                <div class="team-desc">
-                                    <div class="team-title">
-                                        <a href="https://www.spirehealthcare.com/consultant-profiles/mr-piotr-swiatek/"
-                                            target="_blank">
-                                            <h4>Spire St Anthony's Hospital</h4>
-                                        </a>
-                                    </div>
-                                    <div class="clinic-location-time team-content">
-                                        <ul class="iconlist" style="margin-bottom: 10px;">
-                                            <li>
-                                                <i class="icon-map-marker color"></i>
-                                                801 London Rd,
-                                                Cheam,
-                                                Worcester Park,
-                                                Sutton, Surrey, SM3 9DW
-                                            </li>
-                                        </ul>
-                                        <ul class="iconlist" style="margin-bottom: 10px;">
-                                            <li>
-                                                <i class="icon-phone3 color"></i>
-                                                02038 116499
-                                            </li>
-                                        </ul>
-                                        <ul class="iconlist">
-                                            <li>
-                                                <i class="icon-time color"></i>
-                                                <strong><i>By Appointment Only</i></strong>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="oc-item">
-                            <div class="team team-list">
-                                <div class="team-image">
-                                    <a href="https://www.northdownshospital.co.uk/treatments/earwax-removal"
-                                        target="_blank">
-                                        <img src="images/audiology/north-downs-hospital.jpg" alt="North Downs Hospital">
-                                    </a>
-                                </div>
-                                <div class="team-desc">
-                                    <div class="team-title">
-                                        <a href="https://www.northdownshospital.co.uk/treatments/earwax-removal"
-                                            target="_blank">
-                                            <h4>North Downs Hospital</h4>
-                                        </a>
-                                        <span>(Ear Wax Removal services only)</span>
 
-                                    </div>
-                                    <div class="clinic-location-time team-content">
-                                        <ul class="iconlist" style="margin-bottom: 10px;">
-                                            <li>
-                                                <i class="icon-map-marker color"></i>
-                                                46 Tupwood Lane, <br>
-                                                Caterham, Surrey, CR3 6DP
-                                            </li>
-                                        </ul>
-                                        <ul class="iconlist" style="margin-bottom: 10px;">
-                                            <li>
-                                                <i class="icon-phone3 color"></i>
-                                                01883 348981
-                                            </li>
-                                        </ul>
-                                        <ul class="iconlist">
-                                            <li>
-                                                <i class="icon-time color"></i>
-                                                <strong><i>By Appointment Only</i></strong>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="oc-item">
-                            <div class="team team-list clearfix">
-                                <div class="team-image">
-                                    <a href="https://www.fountaintherapies.co.uk/lp-hearing-centre/" target="_blank">
-                                        <img src="images/audiology/fountain_audiologyplus.jpg" alt="Fountain Therapies">
-                                    </a>
-                                </div>
-                                <div class="team-desc">
-                                    <div class="team-title">
-                                        <a href="https://www.fountaintherapies.co.uk/lp-hearing-centre/"
-                                            target="_blank">
-                                            <h4>Fountain Therapies</h4>
-                                        </a>
-                                    </div>
-                                    <div class="clinic-location-time team-content">
-                                        <ul class="iconlist" style="margin-bottom: 10px;">
-                                            <li>
-                                                <i class="icon-map-marker color"></i>
-                                                4 Fountain Mews,
-                                                High Street,
-                                                Handcross,
-                                                West Sussex,
-                                                RH17 6BH
-                                            </li>
-                                        </ul>
-                                        <ul class="iconlist" style="margin-bottom: 10px;">
-                                            <li>
-                                                <i class="icon-phone3 color"></i>
-                                                01444 401271
-                                            </li>
-                                        </ul>
-                                        <ul class="iconlist">
-                                            <li>
-                                                <i class="icon-time color"></i>
-                                                <strong><i>By Appointment Only</i></strong>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                     </div>
 
                 </div>
+            </div>
 
-                <section id="content" class="nobottommargin">
-                    <div class="content-wrap" style="padding:0;">
-                        <div class="container clearfix" style="width:100% !important; padding:0px;">
-                            <div id="promobox" class="promo promo-dark promo-full promo-center">
-                                <div class="container clearfix" style="padding: 30px 0 30px 0;">
-                                    <h4>Not everyone is able to get to the clinic for medical treatments. Let us come to
-                                        you!</h4>
+            <div class="section notopmargin nobottommargin nobottomborder">
+                <div class="container clearfix">
+                    <div class="row center awards">
+                        <div id="section-press" class="col-lg-7">
+                            <div class="heading-block">
+                                <h2>Press & Media</h2>
+                            </div>
+                            <p class="lead">We are pleased to announce that Audiology Plus was awarded the Best
+                                Private Hearing
+                                Clinic of 2020 by SME.</p>
 
-                                    <h3 style="text-transform: uppercase;">
-                                        Audiology Plus also offers Domiciliary Visits in the
-                                        <span>Surrey</span> &amp; <span>Sussex</span> area.
-                                    </h3>
+                            <blockquote>
+                                <p>
+                                    Audiology Plus Ltd has demonstrated excellence, commitment, dedication even in
+                                    the
+                                    face
+                                    of uncertainty. After overcoming such disruption, we believe more than ever,
+                                    that
+                                    you
+                                    should be recognised!
+                                </p>
+                                <footer class="blockquote-footer">SME News, 2020</footer>
+                            </blockquote>
 
-                                </div>
+                            <a href="press.html" class="button button-3d nomargin">Read More</a>
+                        </div>
+
+                        <div class="col-lg-5 topmargin-sm">
+                            <div class="position-relative overflow-hidden">
+                                <img src="images/awards/2020-Southern-Enterprise-vertical.png"
+                                    data-animate="fadeInRight" data-delay="100" alt="SEA 2020 Awards">
                             </div>
                         </div>
                     </div>
-                </section>
 
-                <div class="container clearfix topmargin-lg bottommargin-lg center">
-                    <div class="heading-block nobottomborder center">
-                        <h2>Connect With Us On Social Media</h2>
-                        <span>Don't miss out on our recent activity & latest updates!</span>
-                    </div>
+                    <div class="clear"></div>
+                    <div class="line topmargin"></div>
 
-                    <!-- <script src="https://apps.elfsight.com/p/platform.js" defer></script>
-                    <div class="elfsight-app-7cfa7eef-accf-41e2-bf03-f5d3bde15519"></div> -->
-
-                    <script src="https://apps.elfsight.com/p/platform.js" defer></script>
-                    <div class="elfsight-app-3586a264-8276-4cb7-81cb-2fd48be91106"></div>
-
-                    <a href="https://www.instagram.com/audiology.plus/" target="_blank"
-                        class="button button-rounded button-xlarge font-primary noleftmargin topmargin bottommargin">Follow
-                        us on Instagram <i class="icon-instagram"></i></a>
-                </div>
-
-                <div class="section dark notopmargin nobottommargin"
-                    style="background-image: url('images/audiology/people-white.jpg'); padding: 0px 0px; background-size: cover; background-position: 50% 30%;">
-                    <div class="container clearfix topmargin-lg">
-                        <div id="section-contact" class="page-section heading-block center nobottomborder ">
-                            <h2>Contact Us</h2>
-                        </div>
-
-                        <div class="col_one_fifth"></div>
-                        <div class="col_three_fifth center">
-
-                            <div class="center">
-                                <h4 style="color: #f5f5f5;">
-                                    Got a question? We're here to answer any questions, concerns or inquiries. <br><br>
-
-                                    You can get in touch by calling us at
-                                    <span style="color: #344688;">0330 1247087</span> <br>or our mobile at <span
-                                        style="color: #344688;">
-                                        07380 626000</span>.
-                                    <br><br>
-                                    You can email us at
-                                    <a href="mailto:contact@audiologyplus.co.uk"
-                                        style="color: #8094d8; color: #344688;">contact@audiologyplus.co.uk
-                                    </a>
-                                    or fill out the form below.
+                    <div class="row">
+                        <div class="col_full col_last">
+                            <div class="heading-block nobottomborder">
+                                <h4>
+                                    Recent News
                                 </h4>
                             </div>
 
-                            <div class="contact-widget">
+                            <div id="oc-posts" class="owl-carousel posts-carousel carousel-widget" data-margin="20"
+                                data-nav="true" data-pagi="true" data-items-xxs="1" data-items-lg="3" data-items-sm="2">
 
-                                <div class="contact-form-result"></div>
-
-                                <form class="nobottommargin" id="template-contactform"
-                                    action="https://formspree.io/contact@audiologyplus.co.uk" method="POST">
-
-                                    <div class="form-process"></div>
-
-                                    <div class="col_one_third">
-                                        <label for="template-contactform-name">Name <small>*</small></label>
-                                        <input type="text" id="template-contactform-name" name="full_name" value=""
-                                            class="sm-form-control required" />
+                                <div class="oc-item">
+                                    <div class="ipost clearfix">
+                                        <div class="entry-image">
+                                            <a href="https://view.publitas.com/e2-media/south-east-star_march_2021/page/46-47"
+                                                target="_blank"><img class="image_fade"
+                                                    src="images/press/SES_writeup.png"
+                                                    alt="South East Star March 2021 Article"></a>
+                                        </div>
+                                        <div class="entry-title recent-news">
+                                            <h3>Audiology Plus Shows There is Life After Deaf</h3>
+                                        </div>
+                                        <div class="entry-content recent-news">
+                                            <p>South East Star recognizes Audiology Plus for its outstanding work.</p>
+                                        </div>
                                     </div>
+                                </div>
 
-                                    <div class="col_one_third">
-                                        <label for="template-contactform-email">Email <small>*</small></label>
-                                        <input type="email" id="template-contactform-email" name="_replyto" value=""
-                                            class="required email sm-form-control" />
+                                <div class="oc-item">
+                                    <div class="ipost clearfix">
+                                        <div class="entry-image">
+                                            <div class="fslider" data-arrows="false" data-lightbox="gallery">
+                                                <div class="flexslider">
+                                                    <div class="slider-wrap">
+                                                        <div class="slide"><a
+                                                                href="images/press/Corporate_LiveWire_writeup_full.jpg"
+                                                                target="_blank"><img class="image_fade"
+                                                                    src="images/press/Corporate_LiveWire_writeup.png"
+                                                                    alt="Corporate LiveWire 2021"></a></div>
+                                                        <div class="slide"><a
+                                                                href="images/press/Corporate_LiveWire_writeup_full.jpg"
+                                                                target="_blank"><img class="image_fade"
+                                                                    src="images/awards/2021-Corporate-Livewire-500x280.jpg"
+                                                                    alt="Corporate LiveWire 2021"></a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="entry-title recent-news">
+                                            <h3>Innovation and Excellence Award 2021</h3>
+                                        </div>
+                                        <div class="entry-content recent-news">
+                                            <p>Corporate LiveWire has award Audiology Plus LTD with the 2021 Innovation
+                                                and Excellence Award!</p>
+                                        </div>
                                     </div>
+                                </div>
 
-                                    <div class="col_one_third col_last">
-                                        <label for="template-contactform-phone">Phone</label>
-                                        <input type="text" id="template-contactform-phone" name="phone" value=""
-                                            class="sm-form-control" />
+                                <div class="oc-item">
+                                    <div class="ipost clearfix">
+                                        <div class="entry-image">
+                                            <div class="fslider" data-arrows="false" data-lightbox="gallery">
+                                                <div class="flexslider">
+                                                    <div class="slider-wrap">
+                                                        <div class="slide"><a
+                                                                href="https://www.sme-news.co.uk/issues/southern-enterprise-awards-2020/16/?fbclid=IwAR3lDCf7GnKKj6HZxEIeBqjzWZOZRPuYoVVGt4frTwgtrg05njySOBW_dX4"
+                                                                target="_blank"><img class="image_fade"
+                                                                    src="images/awards/2020-Southern-Enterprise-500x280.png"
+                                                                    alt="Standard Post with Gallery"></a>
+                                                        </div>
+                                                        <div class="slide"><a
+                                                                href="https://www.sme-news.co.uk/issues/southern-enterprise-awards-2020/16/?fbclid=IwAR3lDCf7GnKKj6HZxEIeBqjzWZOZRPuYoVVGt4frTwgtrg05njySOBW_dX4"
+                                                                target="_blank"><img class="image_fade"
+                                                                    src="images/press/SME_writeup.png"
+                                                                    alt="Southern Enterprise Awards 2020 Article"></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="entry-title recent-news">
+                                            <h3>Best Private Hearing Clinic in 2020</h3>
+                                        </div>
+                                        <!-- <ul class="entry-meta clearfix">
+                                            <li><i class="icon-calendar3"></i> December 2020</li>
+                                        </ul> -->
+                                        <div class="entry-content recent-news">
+                                            <p>Southern Enterprise recognizes Audiology Plus for its excellence!</p>
+                                        </div>
                                     </div>
-
-                                    <div class="clear"></div>
-
-                                    <div class="col_full">
-                                        <label for="template-contactform-subject">Subject <small>*</small></label>
-                                        <input type="text" id="template-contactform-subject" name="subject" value=""
-                                            class="required sm-form-control" />
-                                    </div>
-
-                                    <div class="clear"></div>
-
-                                    <div class="col_full">
-                                        <label for="template-contactform-message">Message <small>*</small></label>
-                                        <textarea class="required sm-form-control" id="template-contactform-message"
-                                            name="message" rows="6" cols="30"></textarea>
-                                    </div>
-
-                                    <div class="col_full hidden">
-                                        <input type="text" id="template-contactform-botcheck"
-                                            name="template-contactform-botcheck" value="" class="sm-form-control" />
-                                    </div>
-
-                                    <div class="col_full hidden">
-                                        <input type="text" name="_gotcha" style="display:none" />
-                                    </div>
-
-                                    <div class="col_full">
-                                        <input type="submit" value="Send Message" id="submit-button" tabindex="5"
-                                            value="Submit" class="button button-3d nomargin">
-                                    </div>
-
-                                </form>
+                                </div>
                             </div>
-
                         </div>
-                        <div class="col_one_fifth col_last"></div>
                     </div>
                 </div>
-
-
             </div>
 
-        </section><!-- #content end -->
-
-        <!-- Footer
-        ============================================= -->
-        <!-- Footer
-        ============================================= -->
-        <footer id="footer" class="dark">
-
-            <div class="container">
-
-                <!-- Footer Widgets
-                ============================================= -->
-                <div class="footer-widgets-wrap clearfix">
 
 
-                    <div class="col_half">
+            <div class="section parallax dark notopmargin nobottommargin reviews-homepage-parallax" id="section-reviews"
+                style="background-image: url('images/misc/audiology_tools.jpg'); padding: 120px 0;">
 
-                        <img src="images/text-logo-cropped-300x118-dark.png" alt="" class="footer-logo">
-
-                        <p>Audiology Plus offers a comprehensive diagnostic hearing assessment for hearing loss, fitting
-                            of hearing aids, hearing aid aftercare for patients at our audiology clinics. <br><br>
-                            Contact us if you have any questions, concerns, or if you would like to schedule an
-                            appointment.</p>
-
-                        <div style="margin-bottom: 10px">
-                            <div class="locations_contact col_half">
-                                <h4 class="footer-details">We Accept</h4>
-
-                                <div>
-                                    <div class="row payments-info">
-
-                                        <ul class="payment-cards clearfix">
-                                            <li><img src="demos/ecommerce/cards/visa.svg" alt="Visa"></li>
-                                            <li><img src="demos/ecommerce/cards/mc.svg" alt="Master Card"></li>
-                                        </ul>
-
+                <div class="fslider testimonial testimonial-full" data-arrows="false" style="z-index: 2;">
+                    <div class="flexslider">
+                        <div class="slider-wrap">
+                            <div class="slide">
+                                <div class="testi-content">
+                                    <p>Just to say thanks for today.
+                                        You confirmed l didn't need micro suction but simply by having my hearing tested
+                                        you actually confirmed l had very little to worry about at all.
+                                        Excellent service with a personal and friendly touch</p>
+                                    <div class="star-rating rating-sm rating-disabled">
+                                        <div class="rating-container fontawesome-icon" data-content="★★★★★">
+                                            <div class="rating-stars" data-content="★★★★★" style="width: 100%;"></div>
+                                        </div>
+                                    </div>
+                                    <div class="testi-meta">
+                                        Lee H.
+                                        <span>Patient</span>
                                     </div>
                                 </div>
-
                             </div>
-
-                            <div class="locations_contact col_half col_last center">
-                                <h4 class="footer-details">Contact</h4>
-
-                                <div>
-                                    <strong>Phone:</strong> 0330 1247087<br>
-                                    <strong>Mobile:</strong> 07380 626000<br>
-                                    <strong>Email:</strong> <a
-                                        href="mailto:contact@audiologyplus.co.uk">contact@audiologyplus.co.uk</a>
+                            <div class="slide">
+                                <div class="testi-content">
+                                    <p>My husband had not been looking forward to the fact that he has to wear hearing
+                                        aids and was exceptionally down at the thought. He cannot believe how much he
+                                        can now hear and
+                                        also for me it is such a pleasure to have the television turned down to a normal
+                                        volume level!</p>
+                                    <div class="star-rating rating-sm rating-disabled">
+                                        <div class="rating-container fontawesome-icon" data-content="★★★★★">
+                                            <div class="rating-stars" data-content="★★★★★" style="width: 100%;"></div>
+                                        </div>
+                                    </div>
+                                    <div class="testi-meta">
+                                        Colin S.
+                                        <span>Patient</span>
+                                    </div>
                                 </div>
-
+                            </div>
+                            <div class="slide">
+                                <div class="testi-content">
+                                    <p>Over the years I have had appointments with both NHS and private audiologists and
+                                        had various aids from both sectors. Piotr is without exception the most
+                                        professional, helpful and charming audiologist I have encountered in many years
+                                        of struggling with my hearing loss</p>
+                                    <div class="star-rating rating-sm rating-disabled">
+                                        <div class="rating-container fontawesome-icon" data-content="★★★★★">
+                                            <div class="rating-stars" data-content="★★★★★" style="width: 100%;"></div>
+                                        </div>
+                                    </div>
+                                    <div class="testi-meta">
+                                        Farah N.
+                                        <span>Patient</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
-
-                        <div class="page-links center">
-                            <a href="#header" data-scrollto="#header">Home</a>
-                            <span>/</span>
-                            <a href="#section-services" data-scrollto="#section-services">Services</a>
-                            <span>/</span>
-                            <a href="#section-about-us" data-scrollto="#section-about-us">About Us</a>
-                            <span>/</span>
-                            <a href="#section-facts" data-scrollto="#section-facts">Facts</a>
-                            <span>/</span>
-                            <a href="#section-locations" data-scrollto="#section-locations">Locations</a>
-                            <span>/</span>
-                            <a href="#section-contact" data-scrollto="#section-contact">Contact</a>
-                        </div>
-
                     </div>
 
-                    <div class="col_half col_last">
-
-                        <div style="float: left;">
-                            <a href="https://twitter.com/AudiologyPlus?ref_src=twsrc%5Etfw"
-                                class="twitter-follow-button" data-show-count="true">Follow @AudiologyPlus</a>
-                            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                        </div>
-
-                        <a class="twitter-timeline" data-dnt="true" data-theme="dark" data-link-color="#b12c46"
-                            data-tweet-limit="1" data-show-replies="false" data-border-color="#010638"
-                            data-chrome="noheader nofooter noborders noscrollbar transparent"
-                            href="https://twitter.com/AudiologyPlus?ref_src=twsrc%5Etfw">Tweets by AudiologyPlus</a>
-                        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
+                    <div class="col_full center nobottommargin">
+                        <a href="reviews.html"
+                            class="center topmargin nobottommargin button button-mini button-rounded button-white button-light">All
+                            Reviews</a>
                     </div>
-
-                </div><!-- .footer-widgets-wrap end -->
-
+                </div>
             </div>
 
-            <!-- Copyrights
-            ============================================= -->
-            <div id="copyrights">
-
+            <section id="slider" class="section notopmargin nobottommargin boxed-slider">
                 <div class="container clearfix">
-
-                    <div class="col_half">
-                        Copyrights &copy; <script>
-                            document.write(new Date().getFullYear());
-                        </script> AudiologyPlus, LTD. &nbsp;|&nbsp; <a href="privacy-policy.html"
-                            style="color: #6f172e !important;">Privacy Policy</a>
-
-                        <br>
-                        <span>
-                            Site &amp; Design by
-                            <a href="https://sangeeta.io/about" target="_blank"
-                                style="color: #6f172e !important;">sangeeta.io</a>
-                        </span>
+                    <div class="heading-block center nobottomborder">
+                        <h2>Hearing Aids</h2>
+                        <span>We are proud to offer hearing aids from top brands</span>
                     </div>
 
-                    <div class="col_half col_last tright">
-                        <div class="fright clearfix">
-                            <a href="https://www.facebook.com/audiologyplus.co.uk"
-                                class="social-icon si-small si-borderless si-facebook">
-                                <i class="icon-facebook"></i>
-                                <i class="icon-facebook"></i>
-                            </a>
+                    <div class="col_two_third" id="hearing-aids-slider">
 
-                            <a href="https://twitter.com/audiologyplus"
-                                class="social-icon si-small si-borderless si-twitter">
-                                <i class="icon-twitter"></i>
-                                <i class="icon-twitter"></i>
-                            </a>
+                        <div class="fslider" data-thumbs="true" data-arrows="false" data-smooth-height="true"
+                            data-animation="slide" data-easing="easeInQuad">
 
-                            <a href="https://www.linkedin.com/company/audiology-plus"
-                                class="social-icon si-small si-borderless si-linkedin">
-                                <i class="icon-linkedin"></i>
-                                <i class="icon-linkedin"></i>
-                            </a>
+                            <div class="flexslider">
+                                <div class="slider-wrap">
 
-                            <a href="https://www.instagram.com/audiology.plus"
-                                class="social-icon si-small si-borderless si-instagram">
-                                <i class="icon-instagram"></i>
-                                <i class="icon-instagram"></i>
-                            </a>
+                                    <div class="slide" data-thumb="images/oticon/widex-hearing-aids-1-1100x663.png">
+                                        <a href="#">
+                                            <img src="images/oticon/widex-hearing-aids-1-1100x663.png"
+                                                alt="Hearing Aid">
+                                        </a>
+                                    </div>
 
-                            <a href="https://www.yell.com/biz/audiology-plus-ltd-ashtead-9841023/"
-                                class="social-icon si-small si-borderless si-yell">
-                                <i>
-                                    <img class="icon-yell" src="images/icons/yell-red.png" alt="yell">
-                                </i>
-                                <i>
-                                    <img class="icon-yell" src="images/icons/yell-white.png" alt="yell">
-                                </i>
-                            </a>
+                                    <div class="slide" data-thumb="images/oticon/widex-moment-recharge-1100x663.png">
+                                        <a href="#">
+                                            <img src="images/oticon/widex-moment-recharge-1100x663.png"
+                                                alt="Hearing Aid">
+                                        </a>
+                                    </div>
+
+                                    <div class="slide" data-thumb="images/oticon/hearing-aid-hand-1100x663.png">
+                                        <a href="#">
+                                            <img src="images/oticon/hearing-aid-hand-1100x663.png" alt="Hearing Aid">
+                                        </a>
+                                    </div>
+
+                                    <div class="slide"
+                                        data-thumb="images/oticon/WIDEX-MOMENT-discreet-hearing-aids-1100x663.jpg">
+                                        <a href="#">
+                                            <img src="images/oticon/WIDEX-MOMENT-discreet-hearing-aids-1100x663.jpg"
+                                                alt="Hearing Aid">
+                                        </a>
+                                    </div>
+
+                                    <div class="slide" data-thumb="images/oticon/Ria2-family.jpg">
+                                        <a href="#">
+                                            <img src="images/oticon/Ria2-family.jpg" alt="Hearing Aid">
+                                        </a>
+                                    </div>
+
+                                    <div class="slide" data-thumb="images/oticon/Ria2_designRITE_and_IIC.jpg">
+                                        <a href="#">
+                                            <img src="images/oticon/Ria2_designRITE_and_IIC.jpg" alt="Hearing Aid">
+                                        </a>
+                                    </div>
+
+                                    <div class="slide" data-thumb="images/oticon/Alta2_miniRITE_DiamondBlack.jpg">
+                                        <a href="#">
+                                            <img src="images/oticon/Alta2_miniRITE_DiamondBlack.jpg" alt="Hearing Aid">
+                                        </a>
+                                    </div>
+
+                                    <div class="slide" data-thumb="images/oticon/Alta2_family_withStreamer2.jpg">
+                                        <a href="#">
+                                            <img src="images/oticon/Alta2_family_withStreamer2.jpg" alt="Hearing Aid">
+                                        </a>
+                                    </div>
+
+                                    <div class="slide" data-thumb="images/oticon/Alta2_designRITE_IIC_CIC.jpg">
+                                        <a href="#">
+                                            <img src="images/oticon/Alta2_designRITE_IIC_CIC.jpg" alt="Hearing Aid">
+                                        </a>
+                                    </div>
+
+                                    <div class="slide" data-thumb="images/oticon/Alta2_CoolBlue.jpg">
+                                        <a href="#">
+                                            <img src="images/oticon/Alta2_CoolBlue.jpg" alt="Hearing Aid">
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col_one_third col_last" id="hearing-aids-caption-img">
+
+                        <div class="hearing-aids-caption-img-container">
+                            <div class="title-block" style="border-left: none;">
+                                <p>
+
+                                    Effective communication requires good hearing. Even a fairly mild hearing loss
+                                    may cause communication difficulty. Hearing aids can make communication easy,
+                                    however correct fitting of hearing aids is not the final stage. Audiology Plus
+                                    not only provides hearing aids from leading hearing aid manufacturers, but also
+                                    provides advice, support, counselling and professional treatment. Our aim is to
+                                    live life without restrictions.
+                                </p>
+                            </div>
+                            <img data-animate="fadeInRight" src="images/oticon/oticon-alta-pro-2-range.jpg"
+                                alt="Oticon Hearing Aid">
                         </div>
 
-                        <div class="clear"></div>
+                    </div>
+                </div>
+            </section>
 
-                        <i class="icon-envelope2"></i> contact@audiologyplus.co.uk <span class="middot">&middot;</span>
-                        <i class="icon-phone3"></i> 0330 1247087
+            <div class="container clearfix topmargin-lg bottommargin-lg">
+
+                <div id="section-locations" class="page-section heading-block center nobottomborder bottommargin-sm">
+                    <h2>Locations</h2>
+                    <span>
+                        Find a location near you to better your hearing today!
+                    </span>
+
+                </div>
+
+                <div class="divider divider-short divider-rounded divider-center">
+                    <i class="icon-map-marker"></i>
+                </div>
+
+                <div class="col_full col_last">
+                    <div id="google-map" class="gmap" style="height: 410px;"></div>
+                </div>
+
+                <div class="promo promo-border bottommargin location-promo" style="text-align: center;">
+                    <h3>We currently hold <span>4</span> clinics in the <span>Surrey</span> and <span>Sussex</span>
+                        area</h3>
+                    <span>Be sure to check back for more locations as we continue to expand!</span>
+                    <a href="locations.html" class="button button-dark button-xlarge button-rounded">All
+                        Locations</a>
+                </div>
+
+
+
+                <div id="oc-team-list" class="owl-carousel team-carousel carousel-widget" data-margin="30"
+                    data-nav="true" data-items-sm="1" data-items-lg="2">
+
+                    <div class="oc-item">
+                        <div class="team team-list clearfix">
+                            <div class="team-image">
+                                <a href="https://www.ashteadhospital.co.uk/specialist/audiology/mr-piotr-swiatek"
+                                    target="_blank">
+                                    <img src="images/locations/ashtead-hospital.jpg" alt="Ashtead Hospital">
+                                </a>
+                            </div>
+                            <div class="team-desc">
+                                <div class="team-title">
+                                    <a href="https://www.ashteadhospital.co.uk/specialist/audiology/mr-piotr-swiatek"
+                                        target="_blank">
+                                        <h4>Ashtead Hospital</h4>
+                                    </a>
+                                </div>
+                                <div class="clinic-location-time team-content">
+                                    <ul class="iconlist" style="margin-bottom: 10px;">
+                                        <li>
+                                            <i class="icon-map-marker color"></i>
+                                            The Warren,
+                                            Ashtead,
+                                            Surrey,
+                                            KT21 2SB
+                                        </li>
+                                    </ul>
+                                    <ul class="iconlist" style="margin-bottom: 10px;">
+                                        <li>
+                                            <i class="icon-phone3 color"></i>
+                                            01372 221400
+                                        </li>
+                                    </ul>
+                                    <ul class="iconlist">
+                                        <li>
+                                            <i class="icon-time color"></i>
+                                            <strong><i>By Appointment Only</i></strong>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="oc-item">
+                        <div class="team team-list">
+                            <div class="team-image">
+                                <a href="https://www.spirehealthcare.com/consultant-profiles/mr-piotr-swiatek/"
+                                    target="_blank">
+                                    <img src="images/locations/spire-hospital.jpg" alt="Spire St Anthony's Hospital">
+                                </a>
+                            </div>
+                            <div class="team-desc">
+                                <div class="team-title">
+                                    <a href="https://www.spirehealthcare.com/consultant-profiles/mr-piotr-swiatek/"
+                                        target="_blank">
+                                        <h4>Spire St Anthony's Hospital</h4>
+                                    </a>
+                                </div>
+                                <div class="clinic-location-time team-content">
+                                    <ul class="iconlist" style="margin-bottom: 10px;">
+                                        <li>
+                                            <i class="icon-map-marker color"></i>
+                                            801 London Rd,
+                                            Cheam,
+                                            Worcester Park,
+                                            Sutton, Surrey, SM3 9DW
+                                        </li>
+                                    </ul>
+                                    <ul class="iconlist" style="margin-bottom: 10px;">
+                                        <li>
+                                            <i class="icon-phone3 color"></i>
+                                            02038 116499
+                                        </li>
+                                    </ul>
+                                    <ul class="iconlist">
+                                        <li>
+                                            <i class="icon-time color"></i>
+                                            <strong><i>By Appointment Only</i></strong>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="oc-item">
+                        <div class="team team-list">
+                            <div class="team-image">
+                                <a href="https://www.northdownshospital.co.uk/treatments/earwax-removal"
+                                    target="_blank">
+                                    <img src="images/locations/north-downs-hospital.jpg" alt="North Downs Hospital">
+                                </a>
+                            </div>
+                            <div class="team-desc">
+                                <div class="team-title">
+                                    <a href="https://www.northdownshospital.co.uk/treatments/earwax-removal"
+                                        target="_blank">
+                                        <h4>North Downs Hospital</h4>
+                                    </a>
+
+                                </div>
+                                <div class="clinic-location-time team-content">
+                                    <ul class="iconlist" style="margin-bottom: 10px;">
+                                        <li>
+                                            <i class="icon-map-marker color"></i>
+                                            46 Tupwood Lane, <br>
+                                            Caterham, Surrey, CR3 6DP
+                                        </li>
+                                    </ul>
+                                    <ul class="iconlist" style="margin-bottom: 10px;">
+                                        <li>
+                                            <i class="icon-phone3 color"></i>
+                                            01883 348981
+                                        </li>
+                                    </ul>
+                                    <ul class="iconlist">
+                                        <li>
+                                            <i class="icon-time color"></i>
+                                            <strong><i>By Appointment Only</i></strong>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="oc-item">
+                        <div class="team team-list clearfix">
+                            <div class="team-image">
+                                <a href="https://www.fountaintherapies.co.uk/lp-hearing-centre/" target="_blank">
+                                    <img src="images/locations/fountain-therapies.jpg" alt="Fountain Therapies">
+                                </a>
+                            </div>
+                            <div class="team-desc">
+                                <div class="team-title">
+                                    <a href="https://www.fountaintherapies.co.uk/lp-hearing-centre/" target="_blank">
+                                        <h4>Fountain Therapies</h4>
+                                    </a>
+                                </div>
+                                <div class="clinic-location-time team-content">
+                                    <ul class="iconlist" style="margin-bottom: 10px;">
+                                        <li>
+                                            <i class="icon-map-marker color"></i>
+                                            4 Fountain Mews,
+                                            High Street,
+                                            Handcross,
+                                            West Sussex,
+                                            RH17 6BH
+                                        </li>
+                                    </ul>
+                                    <ul class="iconlist" style="margin-bottom: 10px;">
+                                        <li>
+                                            <i class="icon-phone3 color"></i>
+                                            01444 401271
+                                        </li>
+                                    </ul>
+                                    <ul class="iconlist">
+                                        <li>
+                                            <i class="icon-time color"></i>
+                                            <strong><i>By Appointment Only</i></strong>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <section id="content" class="nobottommargin">
+                <div class="content-wrap" style="padding:0;">
+                    <div class="container clearfix" style="width:100% !important; padding:0px;">
+                        <div id="promobox" class="promo promo-dark promo-full promo-center">
+                            <div class="container clearfix" style="padding: 30px 0 30px 0;">
+                                <h4>Not everyone is able to get to the clinic for medical treatments. Let us come to
+                                    you!</h4>
+
+                                <h3 style="text-transform: uppercase;">
+                                    Audiology Plus also offers Domiciliary Visits in the
+                                    <span>Surrey</span> &amp; <span>Sussex</span> area.
+                                </h3>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="section dark notopmargin nobottommargin"
+                style="background-image: url('images/misc/couple-walking.jpg'); padding: 0px 0px; background-size: cover; background-position: 50% 30%;">
+                <div class="container clearfix topmargin-lg">
+                    <div id="section-contact" class="page-section heading-block center nobottomborder ">
+                        <h2>Contact Us</h2>
+                    </div>
+
+                    <div class="col_one_fifth"></div>
+                    <div class="col_three_fifth center">
+
+                        <div class="center">
+                            <h4 style="color: #f5f5f5;">
+                                Got a question? We're here to answer any questions, concerns or inquiries. <br><br>
+
+                                You can get in touch by calling us at
+                                <span style="color: #344688;">0330 1247087</span> <br>or our mobile at <span
+                                    style="color: #344688;">
+                                    07380 626000</span>.
+                                <br><br>
+                                You can email us at
+                                <a href="mailto:contact@audiologyplus.co.uk"
+                                    style="color: #8094d8; color: #344688;">contact@audiologyplus.co.uk
+                                </a>
+                                or fill out the form below.
+                            </h4>
+                        </div>
+
+                        <div class="contact-widget">
+
+                            <div class="contact-form-result"></div>
+
+                            <form class="nobottommargin" id="template-contactform"
+                                action="https://formspree.io/contact@audiologyplus.co.uk" method="POST">
+
+                                <div class="form-process"></div>
+
+                                <div class="col_one_third">
+                                    <label for="template-contactform-name">Name <small>*</small></label>
+                                    <input type="text" id="template-contactform-name" name="full_name" value=""
+                                        class="sm-form-control required" />
+                                </div>
+
+                                <div class="col_one_third">
+                                    <label for="template-contactform-email">Email <small>*</small></label>
+                                    <input type="email" id="template-contactform-email" name="_replyto" value=""
+                                        class="required email sm-form-control" />
+                                </div>
+
+                                <div class="col_one_third col_last">
+                                    <label for="template-contactform-phone">Phone</label>
+                                    <input type="text" id="template-contactform-phone" name="phone" value=""
+                                        class="sm-form-control" />
+                                </div>
+
+                                <div class="clear"></div>
+
+                                <div class="col_full">
+                                    <label for="template-contactform-subject">Subject <small>*</small></label>
+                                    <input type="text" id="template-contactform-subject" name="subject" value=""
+                                        class="required sm-form-control" />
+                                </div>
+
+                                <div class="clear"></div>
+
+                                <div class="col_full">
+                                    <label for="template-contactform-message">Message <small>*</small></label>
+                                    <textarea class="required sm-form-control" id="template-contactform-message"
+                                        name="message" rows="6" cols="30"></textarea>
+                                </div>
+
+                                <div class="col_full hidden">
+                                    <input type="text" id="template-contactform-botcheck"
+                                        name="template-contactform-botcheck" value="" class="sm-form-control" />
+                                </div>
+
+                                <div class="col_full hidden">
+                                    <input type="text" name="_gotcha" style="display:none" />
+                                </div>
+
+                                <div class="col_full">
+                                    <input type="submit" value="Send Message" id="submit-button" tabindex="5"
+                                        value="Submit" class="button button-3d nomargin">
+                                </div>
+
+                            </form>
+                        </div>
+
+                    </div>
+                    <div class="col_one_fifth col_last"></div>
+                </div>
+            </div>
+
+
+    </div>
+
+    </section><!-- #content end -->
+
+    <!-- Footer
+        ============================================= -->
+    <!-- Footer
+        ============================================= -->
+    <footer id="footer" class="dark">
+
+        <div class="container">
+
+            <!-- Footer Widgets
+                ============================================= -->
+            <div class="footer-widgets-wrap clearfix">
+
+
+                <div class="col_half">
+
+                    <img src="images/logo/text-logo-cropped-300x118-dark.png" alt="" class="footer-logo">
+
+                    <p>Audiology Plus offers a comprehensive diagnostic hearing assessment for hearing loss, fitting
+                        of hearing aids, hearing aid aftercare for patients at our audiology clinics. <br><br>
+                        Contact us if you have any questions, concerns, or if you would like to schedule an
+                        appointment.</p>
+
+                    <div style="margin-bottom: 10px">
+                        <div class="locations_contact col_full center">
+                            <h4 class="footer-details">We Accept</h4>
+
+                            <div>
+                                <div class="row payments-info">
+
+                                    <ul class="payment-cards clearfix">
+                                        <li><img src="images/cards/visa.svg" alt="Visa"></li>
+                                        <li><img src="images/cards/mc.svg" alt="Master Card"></li>
+                                        <li><img src="images/cards/ae.svg" alt="American Express"></li>
+                                        <li><img src="images/cards/bacs.png" alt="Bacs"></li>
+                                        <li><img src="images/cards/generic-card.png" alt="Credit Card">
+                                        <li><img src="images/cards/cheque.png" alt="Cheque"></li>
+                                        <li><img src="images/cards/cash.png" alt="Cash"></li>
+                                    </ul>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="locations_contact col_full col_last center">
+                            <h4 class="footer-details">Contact</h4>
+
+                            <div>
+                                <strong>Phone:</strong> 0330 1247087<br>
+                                <strong>Mobile:</strong> 07380 626000<br>
+                                <strong>Email:</strong> <a
+                                    href="mailto:contact@audiologyplus.co.uk">contact@audiologyplus.co.uk</a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="page-links center">
+                        <a href="#header" data-scrollto="#header">Home</a>
+                        <span>/</span>
+                        <a href="#section-services" data-scrollto="#section-services">Services</a>
+                        <span>/</span>
+                        <a href="#section-about-us" data-scrollto="#section-about-us">About Us</a>
+                        <span>/</span>
+                        <a href="#section-facts" data-scrollto="#section-facts">Facts</a>
+                        <span>/</span>
+                        <a href="#section-press" data-scrollto="#section-press">Press</a>
+                        <span>/</span>
+                        <a href="#section-reviews" data-scrollto="#section-reviews">Reviews</a>
+                        <span>/</span>
+                        <a href="#section-locations" data-scrollto="#section-locations">Locations</a>
+                        <span>/</span>
+                        <a href="#section-contact" data-scrollto="#section-contact">Contact</a>
                     </div>
 
                 </div>
 
-            </div><!-- #copyrights end -->
+                <div class="col_half col_last">
 
-        </footer><!-- #footer end -->
-        <!-- #footer end -->
+                    <div style="float: left;">
+                        <a href="https://twitter.com/AudiologyPlus?ref_src=twsrc%5Etfw" class="twitter-follow-button"
+                            data-show-count="true">Follow @AudiologyPlus</a>
+                        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    </div>
+
+                    <a class="twitter-timeline" data-dnt="true" data-theme="dark" data-link-color="#b12c46"
+                        data-tweet-limit="1" data-show-replies="false" data-border-color="#010638"
+                        data-chrome="noheader nofooter noborders noscrollbar transparent"
+                        href="https://twitter.com/AudiologyPlus?ref_src=twsrc%5Etfw">Tweets by AudiologyPlus</a>
+                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+                </div>
+
+            </div><!-- .footer-widgets-wrap end -->
+
+        </div>
+
+        <!-- Copyrights
+            ============================================= -->
+        <div id="copyrights">
+
+            <div class="container clearfix">
+
+                <div class="col_half">
+                    Copyrights &copy; <script>
+                        document.write(new Date().getFullYear());
+                    </script> AudiologyPlus, LTD. &nbsp;|&nbsp; <a href="privacy-policy.html"
+                        style="color: #6f172e !important;">Privacy Policy</a>
+
+                    <br>
+                    <span>
+                        Site &amp; Design by
+                        <a href="https://sangeeta.io/about" target="_blank"
+                            style="color: #6f172e !important;">sangeeta.io</a>
+                    </span>
+                </div>
+
+                <div class="col_half col_last tright">
+                    <div class="fright clearfix">
+                        <a href="https://www.facebook.com/audiologyplus.co.uk"
+                            class="social-icon si-small si-borderless si-facebook">
+                            <i class="icon-facebook"></i>
+                            <i class="icon-facebook"></i>
+                        </a>
+
+                        <a href="https://twitter.com/audiologyplus"
+                            class="social-icon si-small si-borderless si-twitter">
+                            <i class="icon-twitter"></i>
+                            <i class="icon-twitter"></i>
+                        </a>
+
+                        <a href="https://www.linkedin.com/company/audiology-plus"
+                            class="social-icon si-small si-borderless si-linkedin">
+                            <i class="icon-linkedin"></i>
+                            <i class="icon-linkedin"></i>
+                        </a>
+
+                        <a href="https://www.instagram.com/audiology.plus"
+                            class="social-icon si-small si-borderless si-instagram">
+                            <i class="icon-instagram"></i>
+                            <i class="icon-instagram"></i>
+                        </a>
+
+                        <a href="https://www.yell.com/biz/audiology-plus-ltd-ashtead-9841023/"
+                            class="social-icon si-small si-borderless si-yell">
+                            <i>
+                                <img class="icon-yell" src="images/icons/yell-red.png" alt="yell">
+                            </i>
+                            <i>
+                                <img class="icon-yell" src="images/icons/yell-white.png" alt="yell">
+                            </i>
+                        </a>
+                    </div>
+
+                    <div class="clear"></div>
+
+                    <i class="icon-envelope2"></i> contact@audiologyplus.co.uk <span class="middot">&middot;</span>
+                    <i class="icon-phone3"></i> 0330 1247087
+                </div>
+
+            </div>
+
+        </div><!-- #copyrights end -->
+
+    </footer><!-- #footer end -->
+    <!-- #footer end -->
 
     </div><!-- #wrapper end -->
 

@@ -58,11 +58,21 @@ body {
 }
 
 .promo.promo-dark {
-    /*background: #fffbd5 !important;  
-    background: -webkit-linear-gradient(to right, #9c0624, #db7288) !important;  
+    /*background: #fffbd5 !important;
+    background: -webkit-linear-gradient(to right, #9c0624, #db7288) !important;
     background: linear-gradient(to right, #1a3169, #2a609c) !important;*/
 
     background: linear-gradient(to right, #0b1371, #1377ce);
+}
+
+.testimonial-dark-blue {
+    background: linear-gradient(to right, #0b1371, #1377ce);
+    color: white;
+}
+
+.testimonial-blue-2 {
+    background: linear-gradient(to right, #253db1, #2a91da);
+    color: white;
 }
 
 .promo.promo-dark>span,
@@ -210,7 +220,7 @@ body {
     margin-top: 20px;
     font-size: 14px;
     color: #1534a3;
-    /*position: absolute;*/
+    position: absolute;
     bottom: 0px;
 }
 
@@ -235,6 +245,30 @@ body {
 #page-title.page-title-parallax {
     background-size: auto;
 }
+
+.about-page-image {
+    max-width: 350px !important;
+}
+
+/*------------------------------------------------------------*/
+
+
+/* Recent News - Homepage */
+.recent-news h3 {
+    /* color: #030b53; */
+    color: #9f2243;
+    font-weight: 700 !important;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    line-height: 22.5px;
+}
+
+.recent-news p {
+    /* color: #030b53; */
+}
+
+/*------------------------------------------------------------*/
+
 
 /*------------------------------------------------------------*/
 
@@ -498,7 +532,7 @@ body:not(.device-touch):not(.device-xs):not(.device-xxs) .mediabox-overlay a {
 }
 
 .payments-info {
-    text-align: center;
+    /* text-align: center; */
 }
 
 .payment-cards {
@@ -512,13 +546,14 @@ body:not(.device-touch):not(.device-xs):not(.device-xxs) .mediabox-overlay a {
     width: 44px;
 }
 
-blockquote {
+/* blockquote {
     font-family: "Merriweather", serif;
-}
+} */
 
 blockquote p {
     font-size: 19px;
     color: #3c5898;
+    /* font-style: italic; */
 }
 
 blockquote footer {
@@ -892,7 +927,7 @@ blockquote footer {
 }
 
 .locations_contact h4 {
-    text-align: center;
+    /* text-align: center; */
     margin-bottom: 10px;
 }
 
@@ -947,6 +982,10 @@ blockquote footer {
     padding-top: 0;
 }
 
+.clients-grid li a {
+    opacity: 1 !important;
+}
+
 .clients-grid {
     align-items: center;
     align-content: center;
@@ -973,9 +1012,62 @@ blockquote footer {
     border-bottom: 0;
 }
 
-.clients-grid li a,
+/* .clients-grid li a,
 .clients-grid li img {
     opacity: 1;
+} */
+
+.testimonial {
+    max-width: 700px !important;
+}
+
+#testimonial-pattern {
+    background: linear-gradient(to right, #a4aae8, #1377ce);
+    margin-bottom: 0;
+}
+
+.testi-content p {
+    font-family: 'Lato', sans-serif;
+}
+
+.testi-meta span {
+    font-style: italic;
+    color: white;
+}
+
+.uneven-testimonial {
+    display: flex;
+    align-items: center;
+}
+
+.rating-container {
+    padding-right: 0;
+}
+
+.rating-sm {
+    font-size: 20px;
+}
+
+.reviews-page-quote p {
+    font-size: 20px !important;
+    font-style: italic;
+}
+
+.reviews-page-quote footer {
+    font-size: 90% !important;
+}
+
+/* Press Page */
+.portfolio-desc {
+    background-color: white;
+}
+
+.insurance-logos li img {
+    width: 60% !important;
+}
+
+.reviews-homepage-parallax {
+    background-position: center;
 }
 
 /* -------------------------------------------------- */
@@ -1006,6 +1098,7 @@ blockquote footer {
 }
 
 @media (min-width: 1200px) {
+
     #about-container {
         width: 1000px;
     }
@@ -1027,6 +1120,52 @@ blockquote footer {
         background-position: 76% -176px !important;
         /*background-size: cover !important;*/
         background-size: auto !important;
+    }
+}
+
+@media (max-width: 1200px) {
+    /* #header .container {
+        width: 750px !important;
+    } */
+
+    #header #logo {
+        display: block;
+        height: 100px;
+        float: none;
+        margin: 0 auto 0 !important;
+        max-width: none;
+        text-align: center;
+        border: 0 !important;
+        padding: 0 !important;
+        float: none !important;
+    }
+
+    #logo img {
+        display: inline-block;
+    }
+
+    #header #primary-menu-trigger {
+        pointer-events: auto;
+        top: 25px;
+        margin-top: 0;
+        left: 0;
+        opacity: 1;
+        z-index: 1;
+    }
+
+    #header #primary-menu {
+        display: block;
+        float: none;
+    }
+
+    #primary-menu>ul {
+        display: none;
+        float: none !important;
+        border: 0 !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        -webkit-transition: none;
+        transition: none;
     }
 }
 
@@ -1086,7 +1225,18 @@ blockquote footer {
     .footer-widgets-wrap>.col_half:last-child {
         margin-top: 30px;
     }
+
+    .reviews-homepage-parallax {
+        background-position-x: -417px;
+        background-position-y: center;
+    }
 }
+
+/* @media (min-width: 992px) {
+    .container {
+        width: 750px !important;
+    }
+} */
 
 @media (min-width: 768px) {
     .locations_contact {
@@ -1174,6 +1324,10 @@ blockquote footer {
         text-align: left;
         list-style: none;
     }
+
+    #about-page-paragraph {
+        display: none;
+    }
 }
 
 @media (max-width: 767px) {
@@ -1205,7 +1359,7 @@ blockquote footer {
     }
 
     #page-title.facts-page-title {
-        background-position: 81% 66px !important;
+        background-position: 75% 66px !important;
     }
 
     #page-title.about-page-title {
@@ -1258,6 +1412,20 @@ blockquote footer {
         display: flex;
         justify-content: center;
     }
+
+    .uneven-testimonial {
+        display: block;
+    }
+
+    .locations_contact,
+    .payments-info {
+        text-align: center;
+    }
+
+    .about-page-image {
+        max-width: 100% !important;
+    }
+
 }
 
 @media (min-width: 480px) and (max-width: 767px) {
