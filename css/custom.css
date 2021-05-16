@@ -246,6 +246,10 @@ body {
     background-size: auto;
 }
 
+.about-page-image {
+    max-width: 350px !important;
+}
+
 /*------------------------------------------------------------*/
 
 
@@ -978,6 +982,10 @@ blockquote footer {
     padding-top: 0;
 }
 
+.clients-grid li a {
+    opacity: 1 !important;
+}
+
 .clients-grid {
     align-items: center;
     align-content: center;
@@ -1056,6 +1064,10 @@ blockquote footer {
 
 .insurance-logos li img {
     width: 60% !important;
+}
+
+.reviews-homepage-parallax {
+    background-position: center;
 }
 
 /* -------------------------------------------------- */
@@ -1213,6 +1225,11 @@ blockquote footer {
     .footer-widgets-wrap>.col_half:last-child {
         margin-top: 30px;
     }
+
+    .reviews-homepage-parallax {
+        background-position-x: -417px;
+        background-position-y: center;
+    }
 }
 
 /* @media (min-width: 992px) {
@@ -1307,6 +1324,10 @@ blockquote footer {
         text-align: left;
         list-style: none;
     }
+
+    #about-page-paragraph {
+        display: none;
+    }
 }
 
 @media (max-width: 767px) {
@@ -1338,7 +1359,7 @@ blockquote footer {
     }
 
     #page-title.facts-page-title {
-        background-position: 81% 66px !important;
+        background-position: 75% 66px !important;
     }
 
     #page-title.about-page-title {
@@ -1395,6 +1416,16 @@ blockquote footer {
     .uneven-testimonial {
         display: block;
     }
+
+    .locations_contact,
+    .payments-info {
+        text-align: center;
+    }
+
+    .about-page-image {
+        max-width: 100% !important;
+    }
+
 }
 
 @media (min-width: 480px) and (max-width: 767px) {
