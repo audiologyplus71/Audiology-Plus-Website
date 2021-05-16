@@ -655,9 +655,9 @@ var SEMICOLON = SEMICOLON || {};
 			if( !animationIn ) { animationIn = 'fadeIn'; }
 			if( !animationOut ) { animationOut = 'fadeOut'; }
 			// if( !durationIn ) { durationIn = 1500; }
-			if( !durationIn ) { durationIn = 500; }
+			if( !durationIn ) { durationIn = 200; }
 			// if( !durationOut ) { durationOut = 800; }
-			if( !durationOut ) { durationOut = 500; }
+			if( !durationOut ) { durationOut = 200; }
 			if( !loaderStyleHtml ) { loaderStyleHtml = '<div class="css3-spinner-bounce1"></div><div class="css3-spinner-bounce2"></div><div class="css3-spinner-bounce3"></div>'; }
 
 			if( !loaderTimeOut ) {
