@@ -1189,7 +1189,7 @@ blockquote footer {
 }
 
 @media (min-width: 768px) {
-    .locations_contact {
+    .locations_contact {    
         margin-bottom: 30px !important;
     }
 }
@@ -1275,6 +1275,10 @@ blockquote footer {
 
     #about-page-paragraph {
         display: none;
+    }
+
+    #home-visits-index-page .col-sm-6 {
+        margin-top: 50px;
     }
 }
 
