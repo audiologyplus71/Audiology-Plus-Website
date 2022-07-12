@@ -873,7 +873,7 @@
 		jQuery(window).on('load', function () {
 			var divScrollToAnchor = window.location.hash;
 
-			if (typeof divScrollToAnchor !== 'undefined') {
+			if (divScrollToAnchor) {
 				var t = setTimeout(function () {
 					$('html,body').stop(true).animate({
 						'scrollTop': $(divScrollToAnchor).offset().top - 100
