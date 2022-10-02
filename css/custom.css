@@ -97,6 +97,11 @@ body {
     background-color: #9c1c37;
 }
 
+.secondary-footer-logo {
+    max-width: 35%;
+    margin-bottom: 20px;
+}
+
 /* Twitter Widget Styles
 -----------------------------------------------------------------*/
 .timeline-Widget {
@@ -195,7 +200,7 @@ body {
     margin-top: 20px;
     font-size: 14px;
     color: #1534a3;
-    position: absolute;
+    /* position: absolute; */
     bottom: 0px;
 }
 
