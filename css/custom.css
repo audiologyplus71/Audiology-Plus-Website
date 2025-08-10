@@ -147,6 +147,14 @@ body {
     background-color: #4e538e;
 }
 
+.top-links li>a {
+    font-size: 15px;
+}
+
+.no-caps {
+    text-transform: none !important;
+}
+
 .dark .top-links li>a {
     color: #ffffff;
 }
@@ -228,6 +236,10 @@ body {
 
 .about-page-image {
     max-width: 350px !important;
+}
+
+.footer-details.contact ~ div {
+    font-size: 18px;
 }
 
 /*------------------------------------------------------------*/
